@@ -1,3 +1,203 @@
+@font-face {
+  font-family: 'robotomedium';
+  src: url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'robotoregular';
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'robotolight';
+  src: url("../fonts/roboto-light-webfont.woff2") format("woff2"), url("../fonts/roboto-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+#navigation {
+  margin: 0 0 0 15px; }
 
+#navigation.small-screen ul {
+  padding-right: 2em; }
+  #navigation.small-screen ul li {
+    text-align: center;
+    border-top: 0px; }
+    #navigation.small-screen ul li a {
+      padding: 15px 20px;
+      font-family: "robotomedium", sans-serif;
+      background-color: #d5a00e;
+      color: white; }
+#navigation.small-screen ul li a:focus, #navigation.small-screen a:hover {
+  background-color: #d5a00e;
+  opacity: 0.8;
+  filter: Alpha(opacity=80); }
+#navigation.small-screen #menu-button {
+  padding: 15px; }
+#navigation.small-screen #menu-button:hover, #navigation.small-screen #menu-button:active {
+  opacity: 0.8;
+  filter: Alpha(opacity=80); }
+#navigation.small-screen #menu-button::before {
+  background: green; }
+#navigation.small-screen #menu-button::after {
+  border-top: 2px solid #00703c;
+  border-bottom: 2px solid #00703c; }
+#navigation.small-screen #menu-button.menu-opened::before {
+  background: #00703c; }
+#navigation.small-screen #menu-button.menu-opened::after {
+  background: #00703c; }
+
+.hero-title {
+  color: #00703c;
+  font-family: "robotomedium", sans-serif;
+  margin-bottom: 0px;
+  margin-top: -10%; }
+
+.hero-text {
+  color: #00703c;
+  font-family: "robotoregular", sans-serif;
+  font-size: 0.85em;
+  margin-bottom: 0.8em; }
+
+.hero-section {
+  background-image: url("../images/main-test.jpg");
+  background-position: 60%; }
+  .hero-section #mainSocial {
+    background-color: #ffffff;
+    position: relative;
+    left: 9em;
+    top: 3.12em;
+    padding: 5px 12px;
+    border-top: 2px solid #d5a00e;
+    border-left: 2px solid #d5a00e;
+    border-right: 2px solid #d5a00e;
+    color: #00703c;
+    display: inline-block; }
+    .hero-section #mainSocial p {
+      margin: 0px;
+      margin-left: 10px;
+      font-family: "robotoregular", sans-serif;
+      font-size: .70em;
+      color: #00703c;
+      margin: 0 auto;
+      text-align: center;
+      margin: -5px; }
+  .hero-section ul {
+    list-style: none; }
+    .hero-section ul li {
+      display: inline-block; }
+      .hero-section ul li a {
+        margin: 0 auto;
+        text-align: center; }
+    .hero-section ul .fa {
+      color: #ffffff;
+      background-color: #d5a00e;
+      padding: 3px; }
+    .hero-section ul .fa:hover, .hero-section ul .fa:active {
+      opacity: 0.8;
+      filter: Alpha(opacity=80); }
+    .hero-section ul .fa-facebook {
+      padding-left: 5px;
+      padding-right: 5px; }
+    .hero-section ul .fa-twitter {
+      padding: 2px; }
+
+#communityPage .service-block {
+  text-align: center;
+  margin-bottom: 30px; }
+#communityPage .section-title {
+  margin-bottom: 20px;
+  font-size: 1.5em; }
+#communityPage h2 {
+  font-size: 1em;
+  font-family: "robotomedium", sans-serif;
+  margin-bottom: 0px; }
+#communityPage img {
+  width: 4em;
+  margin-bottom: -5px; }
+#communityPage p {
+  padding-left: 10px;
+  padding-right: 10px; }
+#communityPage p:last-child {
+  margin-bottom: -5px; }
+#communityPage .service-content h2 {
+  font-size: 1em; }
+
+#freeTrialPage .img-responsive {
+  margin: 0 auto; }
+#freeTrialPage .well-block {
+  margin-top: 25px;
+  padding: 10px 20px 20px 20px; }
+#freeTrialPage h1 {
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  text-align: center; }
+#freeTrialPage p {
+  margin: 0 0 15px 15px; }
+#freeTrialPage .btn-default {
+  margin: 5px 0px 5px 0px; }
+
+#testimonialPage h1 {
+  margin-bottom: 10px;
+  font-size: 1.5em; }
+#testimonialPage .mb60 {
+  margin-bottom: 0px; }
+#testimonialPage h4 {
+  font-size: 0.9em; }
+
+.testimonial-block {
+  padding-left: 15px; }
+
+.testimonial-text {
+  font-size: 1em; }
+
+.testimonial-info {
+  margin: -20px 0 -10px 0; }
+
+.testimonial-name {
+  font-family: "robotomedium", sans-serif; }
+
+.testimonial-meta {
+  color: #d5a00e; }
+
+#testimonialPage.space-medium {
+  padding-bottom: 0px; }
+
+.cta-section {
+  background: url("../images/court.jpg") no-repeat center; }
+
+.cta-text {
+  margin-bottom: 20px;
+  font-size: 0.875em;
+  margin-top: -10px; }
+
+.cta-title {
+  padding-top: 25px;
+  letter-spacing: 0px; }
+
+body, h1, h2, p, .small-title {
+  font-family: "robotoregular", sans-serif; }
+
+.space-medium {
+  padding-top: 25px;
+  padding-bottom: 25px; }
+
+h1 {
+  margin-bottom: 0px;
+  font-family: "robotomedium", sans-serif;
+  font-size: 0.95em; }
+
+p {
+  font-size: 0.8em; }
+
+.btn {
+  padding: 8px 25px; }
+
+.btn-default {
+  font-family: "robotomedium", sans-serif;
+  background-color: #d5a00e; }
+
+.btn-default:hover, .btn-default:focus {
+  opacity: 0.8;
+  filter: Alpha(opacity=80);
+  background-color: #d5a00e; }
 
 /*# sourceMappingURL=main.css.map */

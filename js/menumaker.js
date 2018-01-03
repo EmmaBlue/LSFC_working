@@ -1,7 +1,7 @@
 (function($) {
 
   $.fn.menumaker = function(options) {
-      
+
       var cssmenu = $(this), settings = $.extend({
         title: "Menu",
         format: "dropdown",
@@ -12,11 +12,11 @@
       return this.each(function() {
         cssmenu.find('li ul').parent().addClass('has-sub');
         if (settings.format != 'select') {
-          cssmenu.prepend('<div id="menu-button">' + settings.title + '</div>');
+          cssmenu.prepend('<div id="menu-button">'+ '</div>');
           $(this).find("#menu-button").on('click', function(){
             $(this).toggleClass('menu-opened');
             var mainmenu = $(this).next('ul');
-            if (mainmenu.hasClass('open')) { 
+            if (mainmenu.hasClass('open')) {
               mainmenu.hide().removeClass('open');
             }
             else {
@@ -97,4 +97,3 @@
    title: "Menu",
    format: "multitoggle"
 });
-

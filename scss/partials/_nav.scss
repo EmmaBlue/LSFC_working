@@ -1,0 +1,73 @@
+// Nav
+
+#navigation {
+
+  margin: 0 0 0 15px;
+}
+
+ #navigation.small-screen {
+
+
+   ul  {
+
+     padding-right: 2em;
+
+     li  {
+
+        text-align: center;
+        border-top: 0px;
+
+         a {
+
+           padding: 15px 20px;
+           font-family: $headingFont;
+           background-color: $secondary;
+           color: white;
+         }
+
+     }
+
+   }
+
+
+   ul li a:focus, a:hover {
+
+     background-color: $secondary;
+     opacity: $opacity;
+     filter: Alpha(opacity=80);
+   }
+
+   #menu-button {
+
+      padding: 15px;
+   }
+
+   #menu-button:hover, #menu-button:active {
+
+     opacity: $opacity;
+     filter: Alpha(opacity=80);
+   }
+
+   #menu-button::before {
+
+      background: green;
+    }
+
+    #menu-button::after {
+
+      border-top: 2px solid $primary;
+      border-bottom: 2px solid $primary;
+
+    }
+
+    #menu-button.menu-opened::before {
+
+      background: $primary;
+    }
+
+    #menu-button.menu-opened::after {
+
+      background: $primary;
+    }
+
+ }

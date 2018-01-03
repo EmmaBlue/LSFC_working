@@ -1,0 +1,91 @@
+.hero-title {
+
+  color: $primary;
+  font-family:$headingFont;
+  margin-bottom: 0px;
+  margin-top: -10%;
+
+}
+
+.hero-text {
+
+  color: $primary;
+  font-family: $regText;
+  font-size: 0.85em;
+  margin-bottom: 0.8em;
+}
+
+//Social Media Panel
+.hero-section {
+
+  background-image: url("../images/main-test.jpg");
+  background-position: 60%;
+
+  #mainSocial {
+
+    background-color: $background;
+    position: relative;
+    left: 9em;
+    top: 3.12em;
+    padding: 5px 12px;
+    border-top: 2px solid $secondary;
+    border-left: 2px solid $secondary;
+    border-right: 2px solid $secondary;
+    color: $primary;
+    display: inline-block;
+
+    p {
+
+      margin: 0px;
+      margin-left: 10px;
+      font-family: $regText;
+      font-size: .70em;
+      color: $primary;
+      margin: 0 auto;
+      text-align: center;
+      margin: -5px;
+    }
+  }
+    ul {
+
+    list-style: none;
+
+    li {
+
+      display: inline-block;
+
+      a {
+
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+
+    .fa {
+
+      color: $background;
+      background-color: $secondary;
+      padding: 3px;
+      }
+
+    .fa:hover, .fa:active {
+
+      opacity: $opacity;
+      filter: Alpha(opacity=80);
+    }
+    .fa-facebook {
+
+        padding-left: 5px;
+        padding-right: 5px;
+
+      }
+
+    .fa-twitter {
+
+          padding: 2px;
+
+      }
+
+   }
+
+  }
