@@ -1,3 +1,335 @@
+@font-face {
+  font-family: 'robotomedium';
+  src: url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'robotoregular';
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'robotolight';
+  src: url("../fonts/roboto-light-webfont.woff2") format("woff2"), url("../fonts/roboto-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sansbold';
+  src: url("opensans-bold-webfont.woff2") format("woff2"), url("opensans-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sanssemibold';
+  src: url("opensans-semibold-webfont.woff2") format("woff2"), url("opensans-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sansregular';
+  src: url("opensans-regular-webfont.woff2") format("woff2"), url("opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+#navContain {
+  display: relative; }
 
+#navigation {
+  z-index: 2;
+  position: absolute;
+  top: -2em;
+  right: 0px;
+  width: 100%; }
+
+#navRow.row {
+  margin-top: -20px; }
+
+#navigation {
+  margin: 0 0 0 15px; }
+
+#navigation.small-screen ul {
+  margin-left: -100%; }
+  #navigation.small-screen ul li {
+    text-align: center;
+    border-top: 0px; }
+    #navigation.small-screen ul li a {
+      padding: 15.3px 20px;
+      font-family: "robotomedium", sans-serif;
+      background-color: #d5a00e;
+      color: white;
+      width: 200%; }
+    #navigation.small-screen ul li a.socNav {
+      padding: 10px 10px 0px;
+      display: inline;
+      background-color: #d5a00e; }
+  #navigation.small-screen ul li.socNavContain {
+    width: 200%;
+    background-color: #d5a00e;
+    padding: 15px; }
+#navigation.small-screen ul li a:focus, #navigation.small-screen a:hover {
+  background-color: #d5a00e;
+  opacity: 0.8;
+  filter: Alpha(opacity=80); }
+#navigation.small-screen #menu-button {
+  padding: 15px; }
+#navigation.small-screen #menu-button:hover, #navigation.small-screen #menu-button:active {
+  opacity: 0.8;
+  filter: Alpha(opacity=80); }
+#navigation.small-screen #menu-button::before {
+  background: green; }
+#navigation.small-screen #menu-button::after {
+  border-top: 2px solid #00703c;
+  border-bottom: 2px solid #00703c; }
+#navigation.small-screen #menu-button.menu-opened::before {
+  background: #00703c; }
+#navigation.small-screen #menu-button.menu-opened::after {
+  background: #00703c; }
+
+#mainContent, #logoContain {
+  z-index: 1; }
+
+#mainContent.col-xs-12 {
+  margin-top: 0em; }
+
+.hero-title {
+  color: #00703c;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  margin-bottom: 0px;
+  margin-top: 0.75em;
+  font-weight: bold; }
+
+.hero-text {
+  color: #00703c;
+  font-family: "robotolight", sans-serif;
+  font-size: 0.85em;
+  margin-bottom: 1.3em;
+  padding-right: 60px; }
+
+.hero-section {
+  background: url("../images/main-test2.jpg") no-repeat;
+  background-position: center center fixed;
+  background-size: 100%;
+  min-height: 100%; }
+  .hero-section #mainSocial {
+    background-color: #ffffff;
+    position: relative;
+    left: 9em;
+    top: 3.12em;
+    padding: 5px 12px;
+    border-top: 2px solid #d5a00e;
+    border-left: 2px solid #d5a00e;
+    border-right: 2px solid #d5a00e;
+    color: #00703c;
+    display: inline-block; }
+    .hero-section #mainSocial p {
+      margin: 0px;
+      margin-left: 10px;
+      font-family: "robotolight", sans-serif;
+      font-size: .70em;
+      color: #00703c;
+      margin: 0 auto;
+      text-align: center;
+      margin: -5px; }
+  .hero-section ul {
+    list-style: none; }
+    .hero-section ul li {
+      display: inline-block; }
+      .hero-section ul li a {
+        margin: 0 auto;
+        text-align: center; }
+    .hero-section ul .fa {
+      color: #ffffff;
+      background-color: #d5a00e;
+      padding: 3px; }
+    .hero-section ul .fa:hover, .hero-section ul .fa:active {
+      opacity: 0.8;
+      filter: Alpha(opacity=80); }
+    .hero-section ul .fa-facebook {
+      padding-left: 5px;
+      padding-right: 5px; }
+    .hero-section ul .fa-twitter {
+      padding: 2px; }
+
+#communityPage.space-medium {
+  padding-top: 0px; }
+
+#communityPage .service-block {
+  text-align: center;
+  margin-bottom: 30px; }
+#communityPage .mb60 {
+  margin-bottom: 20px; }
+#communityPage h2 {
+  font-size: 1.25em;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  text-align: center;
+  margin-bottom: 20px; }
+  #communityPage h2 a {
+    color: #00703c; }
+  #communityPage h2 a:hover, #communityPage h2 a:focus {
+    color: #00703c; }
+#communityPage img {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  margin-bottom: -5px; }
+#communityPage p {
+  padding-left: 10px;
+  padding-right: 10px; }
+#communityPage p:last-child {
+  margin-bottom: -5px; }
+#communityPage .service-content h2 {
+  font-size: 1em; }
+
+#freeTrialPage .img-responsive {
+  margin: 0 auto; }
+#freeTrialPage .well-block {
+  margin-top: 25px;
+  padding: 10px 20px 20px 20px; }
+#freeTrialPage h1 {
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  text-align: center; }
+#freeTrialPage p {
+  margin: 0 0 15px 15px; }
+#freeTrialPage .btn-default {
+  margin: 5px 0px 5px 0px; }
+
+#testimonialPage h1 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #00703c; }
+#testimonialPage .mb60 {
+  margin-bottom: 0px; }
+#testimonialPage h4 {
+  font-size: 0.9em;
+  color: #00703c; }
+
+.testimonial-block {
+  padding-left: 15px; }
+
+.testimonial-text {
+  font-size: 1em; }
+
+.testimonial-info {
+  margin: -20px 0 -10px 0; }
+
+.testimonial-name {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif; }
+
+.testimonial-meta {
+  color: #d5a00e; }
+
+#testimonialPage.space-medium {
+  padding-bottom: 0px; }
+
+.cta-section {
+  background: url("../images/court1.jpg") no-repeat center; }
+
+.cta-text {
+  margin-bottom: 20px;
+  font-size: 0.875em;
+  margin-top: -10px; }
+
+.cta-title {
+  padding-top: 25px;
+  letter-spacing: 0px; }
+
+.footer {
+  background-color: #268559;
+  padding-bottom: 20px;
+  padding-top: 20px; }
+  .footer li a:hover, .footer li a:active, .footer li a:focus {
+    color: #d5a00e; }
+
+.widget-newsletter button {
+  height: 36px; }
+
+.footer-block {
+  background-color: white;
+  padding: 20px 40px 10px 40px; }
+
+.footer-social .listnone {
+  padding-left: 8px; }
+
+.tiny-footer {
+  padding-top: 0px; }
+
+.footer .contact li {
+  font-size: 0.9em; }
+
+.footer-widget .widget-title {
+  color: #747474;
+  font-size: 1.15em; }
+.footer-widget h2:nth-child(1) {
+  padding-bottom: 5px; }
+.footer-widget .btn {
+  margin-bottom: 10px; }
+.footer-widget .btn-default {
+  font-size: 0.75em; }
+.footer-widget #signBut.btn {
+  margin-top: 15px; }
+.footer-widget #memberP {
+  margin-bottom: 0px; }
+.footer-widget #sign {
+  color: white;
+  font-weight: bold; }
+.footer-widget li {
+  color: #747474;
+  padding-bottom: 5.5px; }
+  .footer-widget li a {
+    color: #747474;
+    line-height: 0px;
+    font-size: 0.9em; }
+
+.widget-newsletter .form-control {
+  background-color: #747474; }
+
+.copyright-content {
+  padding-top: 0px; }
+  .copyright-content p:nth-child(3) a {
+    margin-left: 3.5px;
+    margin-right: 3.5px; }
+  .copyright-content a:hover, .copyright-content a:active, .copyright-content a:focus {
+    color: #00703c; }
+
+body, h1, h2, .small-title {
+  font-family: "robotolight", sans-serif; }
+
+.space-medium {
+  padding-top: 25px;
+  padding-bottom: 25px; }
+
+a, a:hover, a:active, a:focus {
+  color: #d5a00e; }
+
+html, body {
+  height: 100%; }
+
+h1 {
+  margin-bottom: 0px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-weight: bold;
+  font-size: 0.95em; }
+
+p {
+  font-size: 0.8em;
+  font-family: "robotolight", sans-serif; }
+
+.btn {
+  padding: 8px 25px; }
+
+.btn-default {
+  font-family: "open_sansbold", sans-serif;
+  background-color: #d5a00e;
+  opacity: 1;
+  filter: Alpha(opacity=100);
+  transition: opacity 0.2s linear;
+  -ms-transition: opacity 0.2s linear;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+  -ms-transition: opacity 0.2s linear;
+  -webkit-transition: opacity 0.2s linear; }
+
+.btn-default:hover, .btn-default:focus {
+  opacity: 0.8;
+  filter: Alpha(opacity=80);
+  background-color: #d5a00e; }
 
 /*# sourceMappingURL=main.css.map */

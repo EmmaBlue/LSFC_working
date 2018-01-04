@@ -1,0 +1,54 @@
+#testimonialPage {
+
+  h1 {
+
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: $primary;
+  }
+
+  .mb60 {
+
+    margin-bottom: 0px;
+  }
+
+  h4 {
+
+    font-size:0.9em;
+    color: $primary;
+  }
+
+}
+
+.testimonial-block {
+
+  padding-left: 15px;
+}
+
+.testimonial-text {
+
+  //font-style: normal;
+  font-size: 1em;
+
+}
+
+.testimonial-info {
+
+  margin: -20px 0 -10px 0;
+}
+
+.testimonial-name {
+
+  font-family: $subheadingFont;
+}
+
+.testimonial-meta {
+
+  color: $secondary;
+
+}
+
+#testimonialPage.space-medium {
+
+    padding-bottom: 0px;
+  }
