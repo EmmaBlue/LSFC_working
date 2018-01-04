@@ -1,5 +1,23 @@
 // Nav
 
+#navContain {
+
+  display: relative;
+}
+
+ #navigation {
+
+   z-index: 2;
+   position: absolute;
+   top: -2em;
+   right: 0px;
+   width: 100%;
+ }
+  #navRow.row{
+
+    margin-top: -20px;
+}
+
 #navigation {
 
   margin: 0 0 0 15px;
@@ -10,7 +28,7 @@
 
    ul  {
 
-     padding-right: 2em;
+     margin-left: -100%;
 
      li  {
 
@@ -19,12 +37,27 @@
 
          a {
 
-           padding: 15px 20px;
-           font-family: $headingFont;
+           padding: 15.3px 20px;
+           font-family: $medFont;
            background-color: $secondary;
            color: white;
+           width: 200%;
          }
 
+         a.socNav {
+
+           padding: 10px 10px 0px;
+           display: inline;
+           background-color: $secondary;
+         }
+
+     }
+
+     li.socNavContain {
+
+       width: 200%;
+       background-color: $secondary;
+       padding: 15px;
      }
 
    }

@@ -1,25 +1,39 @@
+#mainContent, #logoContain {
+
+  z-index: 1;
+}
+
+#mainContent.col-xs-12 {
+
+  margin-top: 0em;
+}
+
 .hero-title {
 
   color: $primary;
-  font-family:$headingFont;
+  font-family:$subheadingFont;
   margin-bottom: 0px;
-  margin-top: -10%;
+  margin-top: 0.75em;
+  font-weight: bold;
 
 }
 
 .hero-text {
 
   color: $primary;
-  font-family: $regText;
+  font-family: $regFont;
   font-size: 0.85em;
-  margin-bottom: 0.8em;
+  margin-bottom: 1.3em;
+  padding-right: 60px;
 }
 
 //Social Media Panel
 .hero-section {
 
-  background-image: url("../images/main-test.jpg");
-  background-position: 60%;
+  background: url("../images/main-test2.jpg") no-repeat;
+  background-position: center center fixed;
+  background-size: 100%;
+  min-height: 100%;
 
   #mainSocial {
 
@@ -38,7 +52,7 @@
 
       margin: 0px;
       margin-left: 10px;
-      font-family: $regText;
+      font-family: $regFont;
       font-size: .70em;
       color: $primary;
       margin: 0 auto;

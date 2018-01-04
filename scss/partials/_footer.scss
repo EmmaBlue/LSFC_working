@@ -1,0 +1,134 @@
+.footer {
+
+  background-color: #268559;//#40946d;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  li {
+
+    a:hover, a:active, a:focus {
+
+      color: $secondary;
+    }
+  }
+
+}
+
+.widget-newsletter button {
+
+   height: 36px;
+}
+
+.footer-block {
+
+    background-color: white;//#40946d;
+    padding: 20px 40px 10px 40px;
+
+}
+
+.footer-social {
+
+  .listnone {
+
+    padding-left: 8px;
+  }
+}
+
+
+.tiny-footer {
+
+  padding-top: 0px;
+}
+
+.footer .contact li {
+
+  font-size: 0.9em;
+}
+
+.footer-widget {
+
+  .widget-title {
+
+    color: #747474;
+    font-size: 1.15em;
+  }
+
+  h2:nth-child(1) {
+
+      padding-bottom: 5px;
+  }
+
+  .btn {
+
+    margin-bottom: 10px;
+
+  }
+
+  .btn-default {
+
+    font-size: 0.75em;
+  }
+
+  #signBut.btn {
+
+    margin-top: 15px;
+  }
+
+#memberP{
+
+    margin-bottom: 0px;
+  }
+
+  #sign {
+
+    color: white;
+    font-weight: bold;
+  }
+
+
+
+  li {
+
+    color: #747474;
+    padding-bottom: 5.5px;
+
+    a  {
+
+       color: #747474;
+       line-height: 0px;
+       font-size: 0.9em;
+     }
+
+
+  }
+
+
+}
+
+.widget-newsletter .form-control {
+
+  background-color: #747474;
+}
+
+.copyright-content {
+
+  padding-top: 0px;
+
+  p:nth-child(3) {
+
+    a {
+
+      margin-left: 3.5px;
+      margin-right: 3.5px;
+
+    }
+
+
+  }
+
+  a:hover, a:active, a:focus {
+
+    color: $primary;
+  }
+
+}
