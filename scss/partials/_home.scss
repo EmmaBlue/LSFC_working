@@ -15,6 +15,7 @@
   margin-bottom: 0px;
   margin-top: 0.75em;
   font-weight: bold;
+  padding-right: 20%;
 
 }
 
@@ -30,10 +31,11 @@
 //Social Media Panel
 .hero-section {
 
-  background: url("../images/main-test2.jpg") no-repeat;
-  background-position: center center fixed;
-  background-size: 100%;
+
+  background: url("../images/main-test2.jpg") no-repeat 20%;
   min-height: 100%;
+  padding-bottom: 0px;
+
 
   #mainSocial {
 
@@ -103,3 +105,197 @@
    }
 
   }
+
+  @media screen and (min-width: 321px) and (max-width:375px) {
+
+    .hero-section {
+
+  background: url("../images/main-iphone7.jpg") no-repeat 10%;
+  min-height: 100%;
+    }
+
+}
+
+    @media screen and (min-width: 376px) and (max-width:413px) {
+
+      .hero-section {
+
+
+        background: url("../images/main-iphoneplus.jpg") no-repeat left center;
+        min-height: 100%;
+
+
+      }
+
+
+  }
+
+  @media screen and (min-width: 414px) and (max-width:474px) {
+
+    .hero-section {
+
+        background: url("../images/main-presmalltab.jpg") no-repeat top center;
+        min-height: 80%;
+        background-size: 100%;
+
+    }
+
+
+}
+
+  @media screen and (min-width: 475px) and (max-width:600px) {
+
+    .hero-section {
+
+          background: url("../images/main-smalltab.jpg") no-repeat top center;
+          min-height: 90%;
+
+    }
+
+
+}
+
+@media screen and (min-width: 601px) and (max-width:768px) {
+
+  .hero-section {
+
+    background: url("../images/main-tab.jpg") no-repeat top center;
+    min-height: 72%;
+
+  }
+
+
+}
+
+@media screen and (min-width: 769px) and (max-width:919px) {
+
+  .hero-section {
+
+      background: url("../images/main-predesktop.jpg") no-repeat top center;
+      min-height: 85%;
+
+  }
+
+
+}
+
+
+@media screen and (min-width: 920px) and (max-width:1024px) {
+
+  .hero-section {
+
+        background: url("../images/main-desktop.jpg") no-repeat center center;
+        min-height: 75%;
+
+  }
+
+
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+
+  .hero-section {
+
+    background: url("../images/main.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+  }
+
+
+}
+
+@media screen and (min-width: 1281px) {
+
+  .hero-section {
+
+      background: url("../images/main.jpg") no-repeat bottom center;
+      background-size: cover;
+      min-height: 100%;
+      padding-bottom:10em;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+  }
+
+
+}
+
+@media screen and (min-width: 375px) {
+
+  .hero-title {
+
+    font-size:1.9em;
+    margin-bottom: 0.3em;
+    line-height: 1.4;
+
+  }
+
+  .hero-text {
+
+    padding-right:30%;
+    font-size: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+  }
+
+  #mainContent {
+
+    div:nth-child(1).col-lg-6.col-md-6.col-sm-6.col-xs-12 {
+
+      padding-left: 30px;
+      padding-right: 25px;
+    }
+
+    }
+
+    #logoContain a {
+
+      img {
+
+        padding-left: 10px;
+      }
+
+
+  }
+}
+@media screen and (min-width: 600px) {
+
+  .hero-title {
+
+    font-size:2.25em;
+    padding-right: 20%;
+
+
+  }
+
+  .hero-text {
+
+    padding-right:50%;
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+
+  }
+
+  .btn-default {
+
+    font-size: 0.9em;
+  }
+
+  #logoContain a {
+
+    img {
+
+      padding-left: 20px;
+    }
+
+  }
+
+}

@@ -42,6 +42,7 @@
            background-color: $secondary;
            color: white;
            width: 200%;
+           font-size: 0.9em;
          }
 
          a.socNav {
@@ -102,5 +103,117 @@
 
       background: $primary;
     }
+
+ }
+
+ @media screen and (min-width: 375px) {
+
+  #navigation.small-screen {
+
+    #menu-button::before {
+
+      top: 26.5px;
+      right: 30px;
+      height: 2px;
+      width: 30px;
+    }
+
+    #menu-button::after {
+
+      top: 20px;
+      right: 30px;
+      height: 15px;
+      width: 30px;
+    }
+
+  }
+
+
+
+ }
+
+ @media screen and (min-width: 600px) {
+
+  #navigation.small-screen {
+
+    #menu-button::before {
+
+      top: 26.5px;
+      right: 35px;
+      height: 2px;
+      width: 40px;
+    }
+
+    #menu-button::after {
+
+      top: 20px;
+      right: 35px;
+      height: 15px;
+      width: 40px;
+    }
+
+  }
+
+
+
+ }
+
+ @media screen and (min-width: 768px) {
+
+  #navigation.small-screen {
+
+    #menu-button::before {
+
+      top: 38px;
+      right: 35px;
+      height: 2px;
+      width: 50px;
+    }
+
+    #menu-button::after {
+
+      top: 25px;
+      right: 35px;
+      height: 28px;
+      width: 50px;
+    }
+
+  }
+
+ }
+
+ //Desktop Nav
+
+ @media screen and (min-width: 769px) {
+
+
+  .hero-section {
+
+      div.col-lg-8 {
+
+
+
+    }
+
+    #navContain {
+
+      display: inline;
+    }
+
+     #navigation {
+
+       z-index: 1;
+       position: absolute;
+       top: 0em;
+       right: 0px;
+       width: 100%;
+       display: inline
+     }
+      #navRow.row{
+
+        margin-top: 0px;
+    }
+  }
+
 
  }

@@ -54,7 +54,8 @@
       font-family: "robotomedium", sans-serif;
       background-color: #d5a00e;
       color: white;
-      width: 200%; }
+      width: 200%;
+      font-size: 0.9em; }
     #navigation.small-screen ul li a.socNav {
       padding: 10px 10px 0px;
       display: inline;
@@ -82,6 +83,51 @@
 #navigation.small-screen #menu-button.menu-opened::after {
   background: #00703c; }
 
+@media screen and (min-width: 375px) {
+  #navigation.small-screen #menu-button::before {
+    top: 26.5px;
+    right: 30px;
+    height: 2px;
+    width: 30px; }
+  #navigation.small-screen #menu-button::after {
+    top: 20px;
+    right: 30px;
+    height: 15px;
+    width: 30px; } }
+@media screen and (min-width: 600px) {
+  #navigation.small-screen #menu-button::before {
+    top: 26.5px;
+    right: 35px;
+    height: 2px;
+    width: 40px; }
+  #navigation.small-screen #menu-button::after {
+    top: 20px;
+    right: 35px;
+    height: 15px;
+    width: 40px; } }
+@media screen and (min-width: 768px) {
+  #navigation.small-screen #menu-button::before {
+    top: 38px;
+    right: 35px;
+    height: 2px;
+    width: 50px; }
+  #navigation.small-screen #menu-button::after {
+    top: 25px;
+    right: 35px;
+    height: 28px;
+    width: 50px; } }
+@media screen and (min-width: 769px) {
+  .hero-section #navContain {
+    display: inline; }
+  .hero-section #navigation {
+    z-index: 1;
+    position: absolute;
+    top: 0em;
+    right: 0px;
+    width: 100%;
+    display: inline; }
+  .hero-section #navRow.row {
+    margin-top: 0px; } }
 #mainContent, #logoContain {
   z-index: 1; }
 
@@ -93,7 +139,8 @@
   font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
   margin-bottom: 0px;
   margin-top: 0.75em;
-  font-weight: bold; }
+  font-weight: bold;
+  padding-right: 20%; }
 
 .hero-text {
   color: #00703c;
@@ -103,10 +150,9 @@
   padding-right: 60px; }
 
 .hero-section {
-  background: url("../images/main-test2.jpg") no-repeat;
-  background-position: center center fixed;
-  background-size: 100%;
-  min-height: 100%; }
+  background: url("../images/main-test2.jpg") no-repeat 20%;
+  min-height: 100%;
+  padding-bottom: 0px; }
   .hero-section #mainSocial {
     background-color: #ffffff;
     position: relative;
@@ -147,6 +193,86 @@
     .hero-section ul .fa-twitter {
       padding: 2px; }
 
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .hero-section {
+    background: url("../images/main-iphone7.jpg") no-repeat 10%;
+    min-height: 100%; } }
+@media screen and (min-width: 376px) and (max-width: 413px) {
+  .hero-section {
+    background: url("../images/main-iphoneplus.jpg") no-repeat left center;
+    min-height: 100%; } }
+@media screen and (min-width: 414px) and (max-width: 474px) {
+  .hero-section {
+    background: url("../images/main-presmalltab.jpg") no-repeat top center;
+    min-height: 80%;
+    background-size: 100%; } }
+@media screen and (min-width: 475px) and (max-width: 600px) {
+  .hero-section {
+    background: url("../images/main-smalltab.jpg") no-repeat top center;
+    min-height: 90%; } }
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .hero-section {
+    background: url("../images/main-tab.jpg") no-repeat top center;
+    min-height: 72%; } }
+@media screen and (min-width: 769px) and (max-width: 919px) {
+  .hero-section {
+    background: url("../images/main-predesktop.jpg") no-repeat top center;
+    min-height: 85%; } }
+@media screen and (min-width: 920px) and (max-width: 1024px) {
+  .hero-section {
+    background: url("../images/main-desktop.jpg") no-repeat center center;
+    min-height: 75%; } }
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .hero-section {
+    background: url("../images/main.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; } }
+@media screen and (min-width: 1281px) {
+  .hero-section {
+    background: url("../images/main.jpg") no-repeat bottom center;
+    background-size: cover;
+    min-height: 100%;
+    padding-bottom: 10em;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; } }
+@media screen and (min-width: 375px) {
+  .hero-title {
+    font-size: 1.9em;
+    margin-bottom: 0.3em;
+    line-height: 1.4; }
+
+  .hero-text {
+    padding-right: 30%;
+    font-size: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em; }
+
+  #mainContent div:nth-child(1).col-lg-6.col-md-6.col-sm-6.col-xs-12 {
+    padding-left: 30px;
+    padding-right: 25px; }
+
+  #logoContain a img {
+    padding-left: 10px; } }
+@media screen and (min-width: 600px) {
+  .hero-title {
+    font-size: 2.25em;
+    padding-right: 20%; }
+
+  .hero-text {
+    padding-right: 50%;
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 2em; }
+
+  .btn-default {
+    font-size: 0.9em; }
+
+  #logoContain a img {
+    padding-left: 20px; } }
 #communityPage.space-medium {
   padding-top: 0px; }
 
@@ -177,6 +303,23 @@
 #communityPage .service-content h2 {
   font-size: 1em; }
 
+@media screen and (min-width: 1024px) {
+  #communityPage.space-medium {
+    padding-top: 1.5em; } }
+@media screen and (min-width: 414px) {
+  #communityPage p {
+    font-size: 0.85em; } }
+@media screen and (min-width: 768px) {
+  #communityPage .btn-default {
+    font-size: 0.9em; } }
+@media screen and (min-width: 1024px) {
+  #communityPage .btn-default {
+    font-size: 0.9em;
+    margin-bottom: 20px; }
+  #communityPage p {
+    font-size: 0.95em; }
+  #communityPage .service-block {
+    margin-bottom: 40px; } }
 #freeTrialPage .img-responsive {
   margin: 0 auto; }
 #freeTrialPage .well-block {
@@ -202,7 +345,8 @@
   color: #00703c; }
 
 .testimonial-block {
-  padding-left: 15px; }
+  padding-left: 1em;
+  padding-right: 1em; }
 
 .testimonial-text {
   font-size: 1em; }
@@ -219,6 +363,47 @@
 #testimonialPage.space-medium {
   padding-bottom: 0px; }
 
+@media screen and (min-width: 414px) and (max-width: 559px) {
+  .testimonial-block {
+    padding-left: 1.5em;
+    padding-right: 1.5em; } }
+@media screen and (min-width: 560px) and (max-width: 599px) {
+  .testimonial-block {
+    padding-left: 2em;
+    padding-right: 2em; } }
+@media screen and (min-width: 560px) and (max-width: 599px) {
+  .testimonial-block {
+    padding-left: 2em;
+    padding-right: 2em; } }
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .testimonial-block {
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 15px; } }
+@media screen and (min-width: 768px) and (max-width: 919px) {
+  .testimonial-block {
+    padding-left: 1em;
+    padding-right: 0em;
+    padding-bottom: 20px; }
+
+  #testimonialPage .mb60 {
+    margin-bottom: 20px; } }
+@media screen and (min-width: 920px) {
+  .testimonial-block {
+    padding-left: 0em;
+    padding-bottom: 25px; }
+
+  #testimonialPage .mb60 {
+    margin-bottom: 20px;
+    margin-top: 20px; }
+
+  .testimonial-content {
+    font-size: 1.3em;
+    line-height: 32px; } }
+@media screen and (min-width: 1200px) {
+  .testimonial-block {
+    padding-left: 2em;
+    padding-right: 0em; } }
 .cta-section {
   background: url("../images/court1.jpg") no-repeat center; }
 
@@ -231,6 +416,82 @@
   padding-top: 25px;
   letter-spacing: 0px; }
 
+@media screen and (min-width: 321px) and (max-width: 414px) {
+  #freeTrial.cta-section {
+    background: url("../images/court-iphoneplus.jpg") no-repeat top center;
+    min-height: 60%;
+    background-size: 100%; } }
+@media screen and (min-width: 415px) and (max-width: 600px) {
+  #freeTrial.cta-section {
+    background: url("../images/court-smalltab.jpg") no-repeat top center;
+    min-height: 50%;
+    background-size: 100%; } }
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  #freeTrial.cta-section {
+    background: url("../images/court-tab.jpg") no-repeat top center;
+    min-height: 50%;
+    background-size: 100%; } }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #freeTrial.cta-section {
+    background: url("../images/court-desktop.jpg") no-repeat center center;
+    min-height: 60%;
+    background-size: 100%; } }
+@media screen and (min-width: 1025px) {
+  #freeTrial.cta-section {
+    background: url("../images/court-large.jpg") no-repeat top center;
+    min-height: 70%;
+    background-size: 100%; } }
+@media screen and (min-width: 1200px) {
+  #freeTrial .container {
+    margin-top: 0%; } }
+@media screen and (min-width: 1024px) {
+  #freeTrial .container {
+    padding-left: 40px;
+    padding-right: 600px; }
+  #freeTrial .cta-section {
+    padding-top: 40px; }
+
+  .cta-text {
+    font-size: 1em;
+    margin-top: 0.75em; }
+
+  .cta-title {
+    font-size: 2.75em;
+    padding-top: 0px; }
+
+  .btn-default {
+    margin-top: 0.25em; } }
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  #freeTrial .container {
+    margin-top: 10%; } }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #freeTrial .container {
+    padding-left: 30px;
+    padding-right: 50px;
+    margin-top: 10%; } }
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .cta-text {
+    font-size: 1em;
+    margin-top: 0.5em; }
+
+  .cta-title {
+    font-size: 2em; }
+
+  #freeTrial .container {
+    margin-top: 7%; } }
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  .cta-title {
+    font-size: 1.75em; }
+
+  .cta-text {
+    font-size: 0.95em; } }
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  #freeTrial .container {
+    padding-left: 30px;
+    padding-right: 50px; } }
+@media screen and (min-width: 375px) and (max-width: 500px) {
+  .cta-title {
+    padding-top: 80px; } }
 .footer {
   background-color: #268559;
   padding-bottom: 20px;
@@ -289,6 +550,26 @@
   .copyright-content a:hover, .copyright-content a:active, .copyright-content a:focus {
     color: #00703c; }
 
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .footer-social {
+    margin-left: 25%; } }
+@media screen and (min-width: 920px) {
+  .footer-social {
+    margin-left: 0%; } }
+@media screen and (min-width: 992px) {
+  .footer-widget .widget-title {
+    font-size: 1.3em; }
+  .footer-widget p {
+    font-size: 0.85em; }
+
+  .copyright-content p {
+    display: inline;
+    margin-right: 20px; }
+  .copyright-content #finalP a {
+    margin-right: 20px; } }
+@media screen and (min-width: 1200px) {
+  .footer-widget .widget-title {
+    margin-bottom: 5px; } }
 body, h1, h2, .small-title {
   font-family: "robotolight", sans-serif; }
 
@@ -300,7 +581,7 @@ a, a:hover, a:active, a:focus {
   color: #d5a00e; }
 
 html, body {
-  height: 100%; }
+  height: 95%; }
 
 h1 {
   margin-bottom: 0px;
