@@ -1,4 +1,4 @@
-// Nav
+// Index Nav Styles
 
 
 #navContain {
@@ -15,6 +15,7 @@
     margin-left:70%;
   }
 
+
   img {
 
     height: 5em;
@@ -29,16 +30,38 @@
    top: -2em;
    right: 0px;
    width: 100%;
+
+   ul li {
+
+     a:hover, a:active, a:focus {
+
+       background-color: $secondary;
+     }
+   }
+
+   ul li.socNavContain {
+
+     a {
+
+       background-color: transparent
+     }
+   }
  }
   #navRow.row{
 
     margin-top: -20px;
 }
 
+
 #navigation {
 
   margin: 0 0 0 15px;
+
 }
+#mainSocial ul li.socNavContain {
+
+    background-color: red;
+  }
 
  #navigation.small-screen {
 
@@ -69,6 +92,8 @@
            background-color: $secondary;
          }
 
+
+
      }
 
      li.socNavContain {
@@ -77,6 +102,8 @@
        background-color: $secondary;
        padding: 15px;
      }
+
+
 
    }
 
@@ -101,7 +128,7 @@
 
    #menu-button::before {
 
-      background: green;
+      background: $primary;
     }
 
     #menu-button::after {
@@ -509,3 +536,5 @@
     left:-150px;
   }
 }
+
+//Contact Nav Styles

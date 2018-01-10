@@ -44,12 +44,19 @@
   top: -2em;
   right: 0px;
   width: 100%; }
+  #navigation ul li a:hover, #navigation ul li a:active, #navigation ul li a:focus {
+    background-color: #d5a00e; }
+  #navigation ul li.socNavContain a {
+    background-color: transparent; }
 
 #navRow.row {
   margin-top: -20px; }
 
 #navigation {
   margin: 0 0 0 15px; }
+
+#mainSocial ul li.socNavContain {
+  background-color: red; }
 
 #navigation.small-screen ul {
   margin-left: -100%; }
@@ -81,7 +88,7 @@
   opacity: 0.8;
   filter: Alpha(opacity=80); }
 #navigation.small-screen #menu-button::before {
-  background: green; }
+  background: #00703c; }
 #navigation.small-screen #menu-button::after {
   border-top: 2px solid #00703c;
   border-bottom: 2px solid #00703c; }
@@ -226,6 +233,44 @@
 @media screen and (min-width: 1280px) {
   .hero-section #navigation {
     left: -150px; } }
+.page-header #navRow.row {
+  margin-top: 30px; }
+.page-header ul {
+  list-style: none; }
+  .page-header ul li {
+    display: inline-block; }
+    .page-header ul li a {
+      margin: 0 auto;
+      text-align: center; }
+  .page-header ul .fa {
+    color: #ffffff;
+    background-color: #d5a00e;
+    padding: 3px; }
+  .page-header ul .fa:hover, .page-header ul .fa:active {
+    opacity: 0.8;
+    filter: Alpha(opacity=80); }
+  .page-header ul .fa-facebook {
+    padding-left: 5px;
+    padding-right: 5px; }
+  .page-header ul .fa-twitter {
+    padding: 3px; }
+
+@media screen and (min-width: 1000px) and (max-width: 1024px) {
+  .page-header #logoContain a {
+    margin-left: 10%; }
+
+  #navigation {
+    top: 0em; } }
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+  .page-header #logoContain a {
+    margin-left: 20%; }
+
+  #navigation {
+    top: 0em;
+    left: 10px; } }
+@media screen and (min-width: 1200px) {
+  #navigation {
+    top: 0em; } }
 #mainContent, #logoContain {
   z-index: 1; }
 
@@ -672,6 +717,135 @@
   #nashPage .container {
     padding-left: 5%;
     padding-right: 5%; } }
+#contactPage.page-header {
+  background: url("../images/contact-mobile.jpg") no-repeat;
+  min-height: 50%;
+  padding-bottom: 0px;
+  background-size: 100%; }
+
+@media screen and (min-width: 321px) and (max-width: 414px) {
+  #contactPage.page-header {
+    background: url("../images/contact-iphoneplus.jpg") no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size: 100%; } }
+@media screen and (min-width: 415px) and (max-width: 600px) {
+  #contactPage.page-header {
+    background: url("../images/contact-smalltab.jpg") no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size: 100%; } }
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  #contactPage.page-header {
+    background: url("../images/contact-tab.jpg") no-repeat;
+    min-height: 40%;
+    padding-bottom: 0px;
+    background-size: 100%; } }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #contactPage.page-header {
+    background: url("../images/contact-tab.jpg") no-repeat;
+    min-height: 40%;
+    padding-bottom: 0px;
+    background-size: 100%; } }
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  #contactPage.page-header {
+    background: url("../images/contact-tab.jpg") no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size: 100%; } }
+@media screen and (min-width: 1281px) and (max-width: 1500px) {
+  #contactPage.page-header {
+    background: url("../images/contact-midlarge.jpg") no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size: 100%; } }
+@media screen and (min-width: 1501px) {
+  #contactPage.page-header {
+    background: url("../images/contact-large.jpg") no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size: cover; } }
+.page-title {
+  color: #d5a00e;
+  font-size: 2em;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif; }
+
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+  .page-title {
+    color: #d5a00e;
+    font-size: 3em;
+    margin-top: 50px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif; } }
+@media screen and (min-width: 1200px) {
+  .page-title {
+    color: #d5a00e;
+    font-size: 5em;
+    margin-bottom: 0px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif; } }
+.widget-contact {
+  background-color: white;
+  margin-top: -40px; }
+
+.widget {
+  background-color: white;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center; }
+  .widget iframe {
+    width: 100%;
+    min-height: 320px; }
+
+.widget-social {
+  margin-bottom: 30px; }
+
+.widget-social .social-circle a {
+  background-color: transparent; }
+.widget-social .social-circle .widget-social .social-circle .fa {
+  font-size: 1.5em;
+  text-align: center; }
+.widget-social .social-circle .fa {
+  color: #ffffff;
+  background-color: #d5a00e;
+  padding: 10px; }
+.widget-social .social-circle .fa:hover, .widget-social .social-circle .fa:active {
+  opacity: 0.8;
+  filter: Alpha(opacity=80); }
+.widget-social .social-circle .fa-facebook {
+  padding-left: 15px;
+  padding-right: 15px; }
+.widget-social .social-circle .fa-twitter {
+  padding: 10px;
+  margin-left: 2.5px; }
+
+@media screen and (min-width: 600px) {
+  .widget-social .social-circle .fa {
+    font-size: 1.5em;
+    text-align: center; }
+
+  .widget-social .social-circle .fa-twitter {
+    margin-left: 1px; } }
+@media screen and (min-width: 768px) {
+  .widget iframe {
+    width: 100%;
+    min-height: 650px; } }
+@media screen and (min-width: 768px) {
+  #contactPage .container {
+    margin-top: -60px; } }
+#formContain.col-xs-12 {
+  padding-left: 30px;
+  padding-right: 30px; }
+  #formContain.col-xs-12 #messageContain {
+    padding-left: 15px; }
+
+#contactContent.content {
+  padding-bottom: 30px; }
+
+@media screen and (min-width: 768px) {
+  #contactPage h1 {
+    font-size: 1em; }
+
+  #formContain {
+    margin-top: -40px; } }
 .footer {
   background-color: #268559;
   padding-bottom: 20px;

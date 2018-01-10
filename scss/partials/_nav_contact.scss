@@ -1,0 +1,104 @@
+//Social Media Style
+
+
+.page-header {
+
+  #navRow.row {
+
+    margin-top: 30px;
+  }
+
+  ul {
+
+  list-style: none;
+
+  li {
+
+    display: inline-block;
+
+    a {
+
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  .fa {
+
+    color: $background;
+    background-color: $secondary;
+    padding: 3px;
+    }
+
+  .fa:hover, .fa:active {
+
+    opacity: $opacity;
+    filter: Alpha(opacity=80);
+  }
+  .fa-facebook {
+
+      padding-left: 5px;
+      padding-right: 5px;
+
+    }
+
+  .fa-twitter {
+
+        padding: 3px;
+
+    }
+
+ }
+
+}
+
+//Nav Reformatting
+
+@media screen and (min-width: 1000px) and (max-width: 1024px){
+
+  .page-header {
+
+    #logoContain a {
+
+      margin-left: 10%;
+    }
+
+  }
+
+  #navigation {
+
+    top: 0em;
+  }
+}
+
+
+
+@media screen and (min-width: 1000px) and (max-width: 1199px){
+
+  .page-header {
+
+    #logoContain a {
+
+      margin-left: 20%;
+    }
+
+  }
+
+  #navigation {
+
+    top: 0em;
+    left: 10px;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+
+
+  #navigation {
+
+    top: 0em;
+
+  }
+}
