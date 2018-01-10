@@ -31,6 +31,13 @@
 #navContain {
   display: relative; }
 
+#logoContain {
+  margin-top: -10px; }
+  #logoContain a {
+    margin-left: 70%; }
+  #logoContain img {
+    height: 5em; }
+
 #navigation {
   z-index: 2;
   position: absolute;
@@ -94,6 +101,14 @@
     right: 30px;
     height: 15px;
     width: 30px; } }
+@media screen and (min-width: 414px) and (max-width: 600px) {
+  #logoContain a {
+    margin-left: 80%; } }
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  #logoContain img {
+    height: 6em; }
+  #logoContain a {
+    margin-left: 85%; } }
 @media screen and (min-width: 600px) {
   #navigation.small-screen #menu-button::before {
     top: 26.5px;
@@ -116,18 +131,101 @@
     right: 35px;
     height: 28px;
     width: 50px; } }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1000px) and (max-width: 1023px) {
+  #navRow.row {
+    margin-top: -20px; } }
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  #navRow.row {
+    margin-top: -10px; } }
+@media screen and (min-width: 1200px) {
+  #navRow.row {
+    margin-top: -80px;
+    margin-left: 3%; }
+
+  #mainContent .col-lg-6 {
+    margin-left: 5%; } }
+@media screen and (min-width: 1200px) {
+  .hero-section #logoContain {
+    margin-right: 0px;
+    margin-left: 0px; } }
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+  .hero-section #logoContain {
+    margin-right: 0px;
+    margin-left: -100px; } }
+@media screen and (min-width: 1200px) {
   .hero-section #navContain {
     display: inline; }
   .hero-section #navigation {
     z-index: 1;
     position: absolute;
-    top: 0em;
-    right: 0px;
     width: 100%;
+    display: inline;
+    top: 1px;
+    left: -150px; } }
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+  .hero-section #navContain {
     display: inline; }
-  .hero-section #navRow.row {
-    margin-top: 0px; } }
+  .hero-section #navigation {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    display: inline;
+    top: 1px;
+    left: 75px; } }
+@media screen and (min-width: 1200px) {
+  #logoContain a {
+    margin-left: 12%; } }
+@media screen and (min-width: 1000px) {
+  img {
+    height: 5em;
+    margin-bottom: 20px; } }
+@media screen and (min-width: 992px) and (max-width: 999px) {
+  #logoContain a {
+    margin-left: 275%; }
+  #logoContain img {
+    height: 7em; } }
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  #logoContain a {
+    margin-left: 85%; }
+  #logoContain img {
+    height: 7em; } }
+@media screen and (min-width: 769px) {
+  #navigation li.socNavContain a.socNav {
+    display: inline-block;
+    padding-left: 7px;
+    padding-right: 7px; } }
+@media screen and (min-width: 769px) and (max-width: 999px) {
+  #logoContain img {
+    height: 7em; } }
+@media screen and (min-width: 900px) and (max-width: 999px) {
+  #mainContent div:nth-child(1).col-lg-6.col-md-6.col-sm-6.col-xs-12 {
+    padding-left: 30px; }
+
+  #navigation.small-screen ul {
+    margin-left: -60%; } }
+@media screen and (min-width: 1024px) and (max-width: 1071px) {
+  #navRow.row {
+    margin-right: 5%;
+    margin-left: 7%; } }
+@media screen and (min-width: 1072px) and (max-width: 1199px) {
+  #navRow.row {
+    margin-right: 5%;
+    margin-left: 10%; } }
+@media screen and (min-width: 1024px) {
+  #navigation ul li a {
+    padding: 12px; }
+
+  #logoContain {
+    margin-top: -25px;
+    margin-bottom: 25px; }
+    #logoContain img {
+      height: 5em; }
+
+  #mainSocial ul .fa-twitter {
+    padding: 3px; } }
+@media screen and (min-width: 1280px) {
+  .hero-section #navigation {
+    left: -150px; } }
 #mainContent, #logoContain {
   z-index: 1; }
 
@@ -152,7 +250,8 @@
 .hero-section {
   background: url("../images/main-test2.jpg") no-repeat 20%;
   min-height: 100%;
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+  background-size: cover; }
   .hero-section #mainSocial {
     background-color: #ffffff;
     position: relative;
@@ -191,54 +290,61 @@
       padding-left: 5px;
       padding-right: 5px; }
     .hero-section ul .fa-twitter {
-      padding: 2px; }
+      padding: 3px; }
 
 @media screen and (min-width: 321px) and (max-width: 375px) {
   .hero-section {
     background: url("../images/main-iphone7.jpg") no-repeat 10%;
-    min-height: 100%; } }
+    min-height: 100%;
+    background-size: cover; } }
 @media screen and (min-width: 376px) and (max-width: 413px) {
   .hero-section {
     background: url("../images/main-iphoneplus.jpg") no-repeat left center;
-    min-height: 100%; } }
+    min-height: 100%;
+    background-size: cover; } }
 @media screen and (min-width: 414px) and (max-width: 474px) {
   .hero-section {
     background: url("../images/main-presmalltab.jpg") no-repeat top center;
     min-height: 80%;
-    background-size: 100%; } }
+    background-size: cover; } }
 @media screen and (min-width: 475px) and (max-width: 600px) {
   .hero-section {
     background: url("../images/main-smalltab.jpg") no-repeat top center;
-    min-height: 90%; } }
+    min-height: 90%;
+    background-size: cover; } }
 @media screen and (min-width: 601px) and (max-width: 768px) {
   .hero-section {
     background: url("../images/main-tab.jpg") no-repeat top center;
-    min-height: 72%; } }
+    min-height: 72%;
+    background-size: cover; } }
 @media screen and (min-width: 769px) and (max-width: 919px) {
   .hero-section {
     background: url("../images/main-predesktop.jpg") no-repeat top center;
-    min-height: 85%; } }
+    min-height: 85%;
+    background-size: cover; } }
 @media screen and (min-width: 920px) and (max-width: 1024px) {
   .hero-section {
     background: url("../images/main-desktop.jpg") no-repeat center center;
-    min-height: 75%; } }
+    min-height: 75%;
+    background-size: cover; } }
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
   .hero-section {
     background: url("../images/main.jpg") no-repeat center center;
     background-size: cover;
-    min-height: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover; } }
+    min-height: 100%; } }
 @media screen and (min-width: 1281px) {
   .hero-section {
-    background: url("../images/main.jpg") no-repeat bottom center;
+    background: url("../images/main.jpg") no-repeat center center;
     background-size: cover;
     min-height: 100%;
     padding-bottom: 10em;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover; } }
+@media screen and (min-width: 375px) and (max-width: 899px) {
+  #mainContent div:nth-child(1).col-lg-6.col-md-6.col-sm-6.col-xs-12 {
+    padding-left: 30px;
+    padding-right: 25px; } }
 @media screen and (min-width: 375px) {
   .hero-title {
     font-size: 1.9em;
@@ -251,28 +357,43 @@
     margin-top: 0.5em;
     margin-bottom: 1.5em; }
 
-  #mainContent div:nth-child(1).col-lg-6.col-md-6.col-sm-6.col-xs-12 {
-    padding-left: 30px;
-    padding-right: 25px; }
-
   #logoContain a img {
     padding-left: 10px; } }
+@media screen and (min-width: 1201px) {
+  .hero-text {
+    padding-right: 50%;
+    font-size: 1.25em;
+    margin-top: 1em;
+    margin-bottom: 2em; } }
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .hero-text {
+    padding-right: 50%;
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 2em; } }
 @media screen and (min-width: 600px) {
   .hero-title {
     font-size: 2.25em;
     padding-right: 20%; }
 
-  .hero-text {
-    padding-right: 50%;
-    font-size: 1em;
-    margin-top: 1em;
-    margin-bottom: 2em; }
-
   .btn-default {
-    font-size: 0.9em; }
+    font-size: 0.9em;
+    margin-bottom: 20px; }
 
   #logoContain a img {
     padding-left: 20px; } }
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  .hero-title {
+    margin-top: 0.25em; } }
+@media screen and (min-width: 1000px) {
+  .hero-title {
+    margin-top: 1.25em; } }
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .hero-title {
+    margin-top: 0em; } }
+@media screen and (min-width: 1201px) {
+  .hero-title {
+    font-size: 3em; } }
 #communityPage.space-medium {
   padding-top: 0px; }
 
@@ -309,6 +430,12 @@
 @media screen and (min-width: 414px) {
   #communityPage p {
     font-size: 0.85em; } }
+@media screen and (min-width: 516px) and (max-width: 767px) {
+  #communityPage img {
+    width: 36%; } }
+@media screen and (min-width: 415px) and (max-width: 515px) {
+  #communityPage img {
+    width: 50%; } }
 @media screen and (min-width: 768px) {
   #communityPage .btn-default {
     font-size: 0.9em; } }
@@ -492,6 +619,59 @@
 @media screen and (min-width: 375px) and (max-width: 500px) {
   .cta-title {
     padding-top: 80px; } }
+#nashTitle.cta-title {
+  padding-top: 15px; }
+
+#nashPage.cta-section {
+  background: url("../images/nash.jpg") no-repeat center; }
+
+#nashPage img {
+  margin-bottom: 22px; }
+#nashPage .cta-text {
+  margin-top: -15px;
+  margin-bottom: 20px; }
+#nashPage .cta-text.bold {
+  font-weight: bold; }
+
+@media screen and (min-width: 321px) and (max-width: 414px) {
+  #nashPage.cta-section {
+    background: url("../images/nash-iphoneplus.jpg") no-repeat center; } }
+@media screen and (min-width: 415px) and (max-width: 600px) {
+  #nashPage.cta-section {
+    background: url("../images/nash-smalltab.jpg") no-repeat center; } }
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  #nashPage.cta-section {
+    background: url("../images/nash-tab.jpg") no-repeat center; } }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #nashPage.cta-section {
+    background: url("../images/nash-desktop.jpg") no-repeat center; } }
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  #nashPage.cta-section {
+    background: url("../images/nash-wide.jpg") no-repeat center;
+    background-size: 100%; } }
+@media screen and (min-width: 1281px) {
+  #nashPage.cta-section {
+    background: url("../images/nash-big.jpg") no-repeat center;
+    background-size: cover; } }
+@media screen and (min-width: 769px) {
+  #nashPage img {
+    height: 8em;
+    margin-bottom: 30px; }
+
+  #nashPage p {
+    font-size: 1em; } }
+@media screen and (min-width: 520px) and (max-width: 768px) {
+  #nashPage img {
+    height: 7.5em;
+    margin-bottom: 30px; } }
+@media screen and (min-width: 520px) and (max-width: 1200px) {
+  #nashPage .container {
+    padding-left: 40px;
+    padding-right: 40px; } }
+@media screen and (min-width: 1201px) {
+  #nashPage .container {
+    padding-left: 5%;
+    padding-right: 5%; } }
 .footer {
   background-color: #268559;
   padding-bottom: 20px;
@@ -581,7 +761,7 @@ a, a:hover, a:active, a:focus {
   color: #d5a00e; }
 
 html, body {
-  height: 95%; }
+  height: 100%; }
 
 h1 {
   margin-bottom: 0px;

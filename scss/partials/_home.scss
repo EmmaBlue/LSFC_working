@@ -35,6 +35,7 @@
   background: url("../images/main-test2.jpg") no-repeat 20%;
   min-height: 100%;
   padding-bottom: 0px;
+  background-size: cover;
 
 
   #mainSocial {
@@ -98,7 +99,7 @@
 
     .fa-twitter {
 
-          padding: 2px;
+          padding: 3px;
 
       }
 
@@ -112,6 +113,7 @@
 
   background: url("../images/main-iphone7.jpg") no-repeat 10%;
   min-height: 100%;
+background-size: cover;
     }
 
 }
@@ -123,6 +125,7 @@
 
         background: url("../images/main-iphoneplus.jpg") no-repeat left center;
         min-height: 100%;
+        background-size: cover;
 
 
       }
@@ -136,7 +139,7 @@
 
         background: url("../images/main-presmalltab.jpg") no-repeat top center;
         min-height: 80%;
-        background-size: 100%;
+        background-size: cover;
 
     }
 
@@ -149,6 +152,7 @@
 
           background: url("../images/main-smalltab.jpg") no-repeat top center;
           min-height: 90%;
+          background-size: cover;
 
     }
 
@@ -161,6 +165,7 @@
 
     background: url("../images/main-tab.jpg") no-repeat top center;
     min-height: 72%;
+    background-size: cover;
 
   }
 
@@ -173,6 +178,7 @@
 
       background: url("../images/main-predesktop.jpg") no-repeat top center;
       min-height: 85%;
+      background-size: cover;
 
   }
 
@@ -186,6 +192,7 @@
 
         background: url("../images/main-desktop.jpg") no-repeat center center;
         min-height: 75%;
+        background-size: cover;
 
   }
 
@@ -200,9 +207,6 @@
     background: url("../images/main.jpg") no-repeat center center;
     background-size: cover;
     min-height: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
 
   }
 
@@ -213,11 +217,10 @@
 
   .hero-section {
 
-      background: url("../images/main.jpg") no-repeat bottom center;
+      background: url("../images/main.jpg") no-repeat center center;
       background-size: cover;
       min-height: 100%;
       padding-bottom:10em;
-
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -225,6 +228,24 @@
   }
 
 
+}
+
+@media screen and (min-width: 1200px) {
+
+
+}
+
+@media screen and (min-width: 375px) and (max-width: 899px) {
+
+  #mainContent {
+
+    div:nth-child(1).col-lg-6.col-md-6.col-sm-6.col-xs-12 {
+
+      padding-left: 30px;
+      padding-right: 25px;
+    }
+
+  }
 }
 
 @media screen and (min-width: 375px) {
@@ -245,15 +266,6 @@
     margin-bottom: 1.5em;
   }
 
-  #mainContent {
-
-    div:nth-child(1).col-lg-6.col-md-6.col-sm-6.col-xs-12 {
-
-      padding-left: 30px;
-      padding-right: 25px;
-    }
-
-    }
 
     #logoContain a {
 
@@ -265,6 +277,31 @@
 
   }
 }
+
+@media screen and (min-width: 1201px) {
+
+  .hero-text {
+
+    padding-right:50%;
+    font-size: 1.25em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+
+
+  .hero-text {
+
+    padding-right:50%;
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+
+  }
+}
+
 @media screen and (min-width: 600px) {
 
   .hero-title {
@@ -275,18 +312,11 @@
 
   }
 
-  .hero-text {
-
-    padding-right:50%;
-    font-size: 1em;
-    margin-top: 1em;
-    margin-bottom: 2em;
-
-  }
 
   .btn-default {
 
     font-size: 0.9em;
+    margin-bottom: 20px;
   }
 
   #logoContain a {
@@ -298,4 +328,37 @@
 
   }
 
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px){
+
+  .hero-title {
+
+    margin-top: 0.25em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+
+  .hero-title {
+
+    margin-top: 1.25em;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+
+  .hero-title {
+
+    margin-top: 0em;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+
+  .hero-title {
+
+
+    font-size: 3em;
+  }
 }
