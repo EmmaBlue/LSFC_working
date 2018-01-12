@@ -146,9 +146,14 @@
     margin-top: -10px; } }
 @media screen and (min-width: 1200px) {
   #navRow.row {
-    margin-top: -80px;
-    margin-left: 3%; }
-
+    margin-top: -80px; } }
+@media screen and (min-width: 1801px) {
+  #navRow.row {
+    margin-left: 15%; } }
+@media screen and (min-width: 1551px) and (max-width: 1800px) {
+  #navRow.row {
+    margin-left: 10%; } }
+@media screen and (min-width: 1200px) {
   #mainContent .col-lg-6 {
     margin-left: 5%; } }
 @media screen and (min-width: 1200px) {
@@ -168,7 +173,7 @@
     width: 100%;
     display: inline;
     top: 1px;
-    left: -150px; } }
+    left: -50px; } }
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
   .hero-section #navContain {
     display: inline; }
@@ -209,7 +214,7 @@
     padding-left: 30px; }
 
   #navigation.small-screen ul {
-    margin-left: -60%; } }
+    margin-left: -100%; } }
 @media screen and (min-width: 1024px) and (max-width: 1071px) {
   #navRow.row {
     margin-right: 5%;
@@ -232,9 +237,9 @@
     padding: 3px; } }
 @media screen and (min-width: 1280px) {
   .hero-section #navigation {
-    left: -150px; } }
+    left: -100px; } }
 .page-header #navRow.row {
-  margin-top: 30px; }
+  margin-top: 55px; }
 .page-header ul {
   list-style: none; }
   .page-header ul li {
@@ -270,7 +275,8 @@
     left: 10px; } }
 @media screen and (min-width: 1200px) {
   #navigation {
-    top: 0em; } }
+    top: 0em;
+    left: -100px; } }
 #mainContent, #logoContain {
   z-index: 1; }
 
@@ -774,7 +780,7 @@
   .page-title {
     color: #d5a00e;
     font-size: 3em;
-    margin-top: 50px;
+    margin-top: 0px;
     font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif; } }
 @media screen and (min-width: 1200px) {
   .page-title {
@@ -824,10 +830,14 @@
 
   .widget-social .social-circle .fa-twitter {
     margin-left: 1px; } }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .widget iframe {
     width: 100%;
     min-height: 650px; } }
+@media screen and (min-width: 992px) {
+  .widget iframe {
+    width: 100%;
+    min-height: 500px; } }
 @media screen and (min-width: 768px) {
   #contactPage .container {
     margin-top: -60px; } }
@@ -846,6 +856,167 @@
 
   #formContain {
     margin-top: -40px; } }
+.boardMember {
+  display: inline-block;
+  margin-right: 20px; }
+  .boardMember div.boardPic {
+    height: 100px;
+    width: 100px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    margin-bottom: 20px; }
+  .boardMember h4.boardTitle {
+    font-weight: bold;
+    color: #00703c; }
+
+#aboutPage.page-header {
+  background: url("../images/about-mobile.jpg") no-repeat;
+  min-height: 50%;
+  padding-bottom: 0px;
+  background-size: 100%; }
+
+#aboutContent.content {
+  padding-top: 0px; }
+  #aboutContent.content p:last-child {
+    margin-bottom: 20px; }
+
+.lead {
+  font-size: 1.1em;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  text-align: center; }
+  .lead span {
+    color: #00703c; }
+  .lead span:nth-child(2) {
+    color: #d5a00e; }
+  .lead p {
+    font-size: 0.85em; }
+
+.alignright {
+  margin: 0px 0px 20px 30px; }
+
+ul.navPicList {
+  list-decoration: none; }
+  ul.navPicList li {
+    display: inline-block; }
+
+/*Board Gallery Stylings
+
+.navPicList {
+
+  display: none;
+}
+
+.first {
+
+  height:20px;
+  width: 20px;
+  background-color: $secondary;
+  border-radius: 50%;
+}
+
+#slideshow {
+
+	position: relative;
+	right: 0px;
+  overflow:hidden;
+  width: 3000px;
+  display:inline-block;
+	-webkit-transition: all 0.7s ease;
+	-moz-transition: all 0.7s ease;
+	-o-transition:all 0.7s ease;
+	transition: all 0.7s ease;
+}
+
+#slideshow img {
+
+	float: left;
+}
+
+  .boardMember {
+    position:relative;
+    right: 0px;
+    transition: all .9s;
+    overflow:hidden;
+    margin-left: 3%;
+    margin-right: 3%;
+
+    .navPicList {
+
+      margin-left: 18%;
+    }
+  }*/
+.boardTitle {
+  text-align: center; }
+
+.boardName {
+  text-align: center; }
+
+#slideshow {
+  position: relative;
+  right: 0px;
+  overflow: hidden;
+  display: inline-block;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease; }
+
+@media screen and (min-width: 321px) and (max-width: 414px) {
+  #aboutPage.page-header {
+    background: url("../images/about-iphoneplus.jpg") no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size: 100%; } }
+@media screen and (min-width: 415px) and (max-width: 600px) {
+  #aboutPage.page-header {
+    background: url("../images/about-smalltab.jpg") no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size: 100%; } }
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  #aboutPage.page-header {
+    background: url("../images/about-tab.jpg") no-repeat;
+    min-height: 40%;
+    padding-bottom: 0px;
+    background-size: 100%; } }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #aboutPage.page-header {
+    background: url("../images/about-tab.jpg") no-repeat;
+    min-height: 40%;
+    padding-bottom: 0px;
+    background-size: 100%; } }
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  #aboutPage.page-header {
+    background: url("../images/about-tab.jpg") no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size: 100%; } }
+@media screen and (min-width: 1281px) and (max-width: 1500px) {
+  #aboutPage.page-header {
+    background: url("../images/about-midlarge.jpg") no-repeat;
+    min-height: 70%;
+    padding-bottom: 0px;
+    background-size: 100%; } }
+@media screen and (min-width: 1501px) {
+  #aboutPage.page-header {
+    background: url("../images/about-large.jpg") no-repeat;
+    min-height: 70%;
+    padding-bottom: 0px;
+    background-size: 100%; } }
+@media screen and (min-width: 321px) and (max-width: 1000px) {
+  .lead {
+    padding-top: 20px; } }
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .lead {
+    font-size: 1.25em; } }
+@media screen and (min-width: 768px) {
+  .lead {
+    font-size: 1.5em; } }
+@media screen and (min-width: 1000px) {
+  .lead {
+    text-align: left;
+    padding-top: 40px; } }
 .footer {
   background-color: #268559;
   padding-bottom: 20px;

@@ -6,6 +6,7 @@
   background-size:100%;
 }
 
+
 //Background Image Queries
 
 @media screen and (min-width:321px) and (max-width:414px) {
@@ -103,7 +104,7 @@
 
     color: $secondary;
     font-size: 3em;
-    margin-top: 50px;
+    margin-top: 0px;
     font-family:$subheadingFont;
   }
 }
@@ -205,7 +206,7 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px){
 
   .widget  iframe {
 
@@ -214,6 +215,17 @@ a {
   }
 
 }
+
+@media screen and (min-width: 992px){
+
+  .widget  iframe {
+
+    width: 100% ;
+    min-height: 500px;
+  }
+
+}
+
 
 
 @media screen and (min-width: 768px) {
