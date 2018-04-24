@@ -1,6 +1,6 @@
 .footer {
 
-  background-color: #268559;//#40946d;
+  background-color: white;//#40946d;
   padding-bottom: 20px;
   padding-top: 20px;
 
@@ -46,6 +46,7 @@
 }
 
 .footer-widget {
+
 
   .widget-title {
 
@@ -112,8 +113,6 @@
 
 .copyright-content {
 
-  padding-top: 0px;
-
   p:nth-child(3) {
 
     a {
@@ -168,6 +167,8 @@
   }
 
   .copyright-content {
+
+    padding: 0px;
 
     p {
 

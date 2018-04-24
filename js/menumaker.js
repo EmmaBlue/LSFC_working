@@ -9,6 +9,7 @@
         sticky: false
       }, options);
 
+
       return this.each(function() {
         cssmenu.find('li ul').parent().addClass('has-sub');
         if (settings.format != 'select') {
@@ -90,6 +91,9 @@
         return $(window).on('resize', resizeFix);
 
       });
+
+
+
   };
 })(jQuery);
 
