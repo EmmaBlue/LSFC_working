@@ -149,7 +149,7 @@ label { }
 .btn-primary:hover { background-color: #18150d; color: #fff; }
 .btn-primary.focus, .btn-primary:focus { }
 .btn-white { color: #aa9144; background-color: #fff; border: 1px solid #fff; }
-.btn-white:hover { background-color: #8e7424; border-color: #8e7424; color: #fff; }
+.btn-white:hover { background-color: #00703c; border-color: #fff; color: #fff; }
 .btn-white.focus, .btn-white:focus { background-color: #8e7424; border-color: #8e7424; color: #fff; }
 .btn-link { color: #98989c; text-transform: uppercase; font-size: 12px; font-weight: 700; letter-spacing: 2px; border-bottom: 1px solid #98989c; padding-bottom: 2px; }
 .btn-link:hover { color: #aa9144; font-weight: 700; text-decoration: none; border-bottom: 1px solid #aa9144; }

@@ -1,8 +1,8 @@
-#mainSect {
 
-  overflow:hidden;
+#aboutContent.content {
+
+  margin-bottom:20px;
 }
-
 
 .boardMember {
 
@@ -85,52 +85,6 @@ ul.navPicList {
 
 }
 
-/*Board Gallery Stylings
-
-.navPicList {
-
-  display: none;
-}
-
-.first {
-
-  height:20px;
-  width: 20px;
-  background-color: $secondary;
-  border-radius: 50%;
-}
-
-#slideshow {
-
-	position: relative;
-	right: 0px;
-  overflow:hidden;
-  width: 3000px;
-  display:inline-block;
-	-webkit-transition: all 0.7s ease;
-	-moz-transition: all 0.7s ease;
-	-o-transition:all 0.7s ease;
-	transition: all 0.7s ease;
-}
-
-#slideshow img {
-
-	float: left;
-}
-
-  .boardMember {
-    position:relative;
-    right: 0px;
-    transition: all .9s;
-    overflow:hidden;
-    margin-left: 3%;
-    margin-right: 3%;
-
-    .navPicList {
-
-      margin-left: 18%;
-    }
-  }*/
 
 .boardTitle {
   text-align: center;
@@ -150,6 +104,16 @@ ul.navPicList {
   	-moz-transition: all 0.7s ease;
   	-o-transition:all 0.7s ease;
   	transition: all 0.7s ease;
+  }
+
+  .about-pic {
+
+    width: 50%;
+  }
+
+  .gal-pic {
+
+    margin-bottom: 20px;
   }
 
 //Background Image Queries
@@ -215,7 +179,7 @@ ul.navPicList {
   #aboutPage.page-header {
 
     background: url("../images/about-midlarge.jpg") no-repeat;
-    min-height: 70%;
+    min-height: 50%;
     padding-bottom: 0px;
     background-size:100%;
   }
@@ -227,7 +191,7 @@ ul.navPicList {
   #aboutPage.page-header {
 
     background: url("../images/about-large.jpg") no-repeat;
-    min-height: 70%;
+    min-height: 50%;
     padding-bottom: 0px;
     background-size:100%;
   }
@@ -236,7 +200,7 @@ ul.navPicList {
 
 //Subheading Styles
 
-@media screen and (min-width: 321px) and (max-width: 1000px) {
+@media screen and (min-width: 320px) and (max-width: 1000px) {
 
   .lead {
 

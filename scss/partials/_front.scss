@@ -8,7 +8,6 @@
 }
 
 
-
 video {
   position: absolute;
 
@@ -76,11 +75,29 @@ video {
       margin-left: 10px;
 
 
+
+
     }
 
 
 
   }
+
+#ctaFront li.membersOnly  {
+
+    a {
+
+      color: $primary;
+    }
+
+    a:hover {
+
+      color: $secondary;
+    }
+
+  }
+
+
 
 }
 

@@ -1,0 +1,141 @@
+#programPage.page-header {
+
+  background: url("../images/programs-mobile.jpg") no-repeat;
+  min-height: 20%;
+  padding-bottom: 0px;
+  background-size:100%;
+}
+
+.main-cta {
+
+  background-color: $primary;
+
+  .cta-title {
+
+    font-size: 2.5em;
+    padding-top: 20px;
+  }
+
+  a.btn-white {
+
+    color: $primary;
+
+  }
+
+  a.btn-white:hover {
+
+    color: white;
+
+  }
+
+
+  .btn {
+
+    padding: 20px 50px;
+    text-align:center;
+  }
+}
+#programContent {
+
+  .title {
+
+    color: black;
+    font-size: 0.85em;
+  }
+
+  h2 {
+
+    text-align: center;
+  }
+
+  p {
+
+    font-size: 1em;
+  }
+
+  .service-icon img {
+
+    width: 100%;
+  }
+
+}
+
+//Background Image Queries
+
+@media screen and (min-width:321px) and (max-width:414px) {
+
+  #programPage.page-header {
+
+    background: url("../images/programs-iphoneplus.jpg") no-repeat;
+    min-height: 20%;
+    padding-bottom: 0px;
+    background-size:cover;
+  }
+}
+
+@media screen and (min-width:415px) and (max-width:600px) {
+
+  #programPage.page-header {
+
+    background: url("../images/programs-smalltab.jpg") center center no-repeat;
+    min-height: 40%;
+    padding-bottom: 0px;
+    background-size:cover;
+  }
+}
+
+@media screen and (min-width:601px) and (max-width:768px) {
+
+  #programPage.page-header {
+
+    background: url("../images/programs-tab.jpg") center center no-repeat;
+    min-height: 10%;
+    padding-bottom: 0px;
+    background-size:cover;
+  }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+  #programPage.page-header {
+
+    background: url("../images/programs-tab.jpg") center center no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size:cover;
+  }
+}
+
+
+@media screen and (min-width:1025px) and (max-width:1280px) {
+
+  #programPage.page-header {
+
+    background: url("../images/programs-tab.jpg") center center no-repeat;
+    min-height: 40%;
+    padding-bottom: 0px;
+    background-size:cover;
+  }
+}
+
+@media screen and (min-width:1281px) and (max-width:1500px) {
+
+  #programPage.page-header {
+
+    background: url("../images/programs-midlarge.jpg") center center no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size:cover;
+  }
+}
+
+@media screen and (min-width:1501px)  {
+
+  #programPage.page-header {
+
+    background: url("../images/programs-large.jpg") center center no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size:cover;
+  }
+}

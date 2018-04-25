@@ -6,6 +6,11 @@
   background-size:100%;
 }
 
+#navRow.contactPage  {
+
+
+}
+
 
 //Background Image Queries
 
@@ -227,14 +232,11 @@ a {
 }
 
 
+.hours {
 
-@media screen and (min-width: 768px) {
-
-  #contactPage .container {
-
-    margin-top: -60px;
-  }
+  padding-left: -15px;
 }
+
 
 //Form Styles
 

@@ -3,30 +3,30 @@
 (function(){
 	"use strict";
 	console.log("SEAF Fired");
-	
+
 // JS
-var video = document.querySelector('video');
-var container = document.querySelector('#container');
+var vid = document.querySelector('video');
+var contain = document.querySelector('#container');
 
-console.log(video);
-console.log(container);
+console.log(vid);
+console.log(contain);
 
-var setVideoDimensions = function () {
+var setDimensions = function () {
   // Video's intrinsic dimensions
-  var w = video.videoWidth
-    , h = video.videoHeight;
+  var w = vid.videoWidth
+    , h = vid.videoHeight;
 
   // Intrinsic Ratio
   // Will be more than 1 if W > H and less if W < H
-  var videoRatio = (w / h).toFixed(2);
+  var vidRatio = (w / h).toFixed(2);
 
   // Get the container's computed styles
   //
   // Also calculate the min dimensions required (this will be
   // the container dimentions)
-  var containerStyles = window.getComputedStyle(container)
-    , minW = parseInt( containerStyles.getPropertyValue('width') )
-    , minH = parseInt( containerStyles.getPropertyValue('height') );
+  var styles = window.getComputedStyle(container)
+    , minW = parseInt( styles.getPropertyValue('width') )
+    , minH = parseInt( styles.getPropertyValue('height') );
 
   // What's the min:intrinsic dimensions
   //
@@ -41,25 +41,25 @@ var setVideoDimensions = function () {
   // scale 500 to 700 and then calculate what should be the
   // right width. If we scale 1000 to 1200 then the height
   // will become 600 proportionately.
-  var widthRatio = minW / w
-    , heightRatio = minH / h;
+  var wRatio = minW / w
+    , hRatio = minH / h;
 
   // Whichever ratio is more, the scaling
   // has to be done over that dimension
-  if (widthRatio > heightRatio) {
-    var newWidth = minW;
-    var newHeight = Math.ceil( newWidth / videoRatio );
+  if (wRatio > hRatio) {
+    var newW = minW;
+    var newH = Math.ceil( newW / vidRatio );
   }
   else {
-    var newHeight = minH;
-    var newWidth = Math.ceil( newHeight * videoRatio );
+    var newH = minH;
+    var newW = Math.ceil( newH * vidRatio );
   }
 
-  video.style.width = newWidth + 'px';
-  video.style.height = newHeight + 'px';
+  vid.style.width = newWidth + 'px';
+  vid.style.height = newHeight + 'px';
 };
 
-video.addEventListener('loadedmetadata', setVideoDimensions, false);
-window.addEventListener('resize', setVideoDimensions, false);
+vid.addEventListener('loadedmetadata', setDimensions, false);
+window.addEventListener('resize', setDimensions, false);
 
  })();

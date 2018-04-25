@@ -220,10 +220,7 @@
     padding-right: 7px; } }
 @media screen and (min-width: 900px) and (max-width: 999px) {
   #mainContent div:nth-child(1).col-lg-6.col-md-6.col-sm-6.col-xs-12 {
-    padding-left: 30px; }
-
-  #navigation.small-screen ul {
-    margin-left: -80%; } }
+    padding-left: 30px; } }
 @media screen and (min-width: 1024px) {
   #navigation ul li a {
     padding: 12px; }
@@ -846,9 +843,9 @@
   .widget iframe {
     width: 100%;
     min-height: 500px; } }
-@media screen and (min-width: 768px) {
-  #contactPage .container {
-    margin-top: -60px; } }
+.hours {
+  padding-left: -15px; }
+
 #formContain.col-xs-12 {
   padding-left: 30px;
   padding-right: 30px; }
@@ -864,8 +861,8 @@
 
   #formContain {
     margin-top: -40px; } }
-#mainSect {
-  overflow: hidden; }
+#aboutContent.content {
+  margin-bottom: 20px; }
 
 .boardMember {
   display: inline-block;
@@ -911,52 +908,6 @@ ul.navPicList {
   ul.navPicList li {
     display: inline-block; }
 
-/*Board Gallery Stylings
-
-.navPicList {
-
-  display: none;
-}
-
-.first {
-
-  height:20px;
-  width: 20px;
-  background-color: $secondary;
-  border-radius: 50%;
-}
-
-#slideshow {
-
-	position: relative;
-	right: 0px;
-  overflow:hidden;
-  width: 3000px;
-  display:inline-block;
-	-webkit-transition: all 0.7s ease;
-	-moz-transition: all 0.7s ease;
-	-o-transition:all 0.7s ease;
-	transition: all 0.7s ease;
-}
-
-#slideshow img {
-
-	float: left;
-}
-
-  .boardMember {
-    position:relative;
-    right: 0px;
-    transition: all .9s;
-    overflow:hidden;
-    margin-left: 3%;
-    margin-right: 3%;
-
-    .navPicList {
-
-      margin-left: 18%;
-    }
-  }*/
 .boardTitle {
   text-align: center; }
 
@@ -972,6 +923,12 @@ ul.navPicList {
   -moz-transition: all 0.7s ease;
   -o-transition: all 0.7s ease;
   transition: all 0.7s ease; }
+
+.about-pic {
+  width: 50%; }
+
+.gal-pic {
+  margin-bottom: 20px; }
 
 @media screen and (min-width: 321px) and (max-width: 414px) {
   #aboutPage.page-header {
@@ -1006,16 +963,16 @@ ul.navPicList {
 @media screen and (min-width: 1281px) and (max-width: 1500px) {
   #aboutPage.page-header {
     background: url("../images/about-midlarge.jpg") no-repeat;
-    min-height: 70%;
+    min-height: 50%;
     padding-bottom: 0px;
     background-size: 100%; } }
 @media screen and (min-width: 1501px) {
   #aboutPage.page-header {
     background: url("../images/about-large.jpg") no-repeat;
-    min-height: 70%;
+    min-height: 50%;
     padding-bottom: 0px;
     background-size: 100%; } }
-@media screen and (min-width: 321px) and (max-width: 1000px) {
+@media screen and (min-width: 320px) and (max-width: 1000px) {
   .lead {
     padding-top: 20px; } }
 @media screen and (min-width: 600px) and (max-width: 767px) {
@@ -1035,8 +992,21 @@ ul.navPicList {
   .footer li a:hover, .footer li a:active, .footer li a:focus {
     color: #d5a00e; }
 
+h4 {
+  font-weight: bold; }
+
 .widget-newsletter button {
   height: 36px; }
+
+.hours {
+  margin-left: -15px;
+  margin-bottom: 10px; }
+
+.sHours {
+  margin-bottom: 20px; }
+
+div.bottom {
+  margin-bottom: 20px; }
 
 .footer-block {
   background-color: white;
@@ -1155,6 +1125,10 @@ video {
   padding: 10px;
   margin-top: 20px;
   margin-left: 10px; }
+#overlay #ctaFront li.membersOnly a {
+  color: #00703c; }
+#overlay #ctaFront li.membersOnly a:hover {
+  color: #d5a00e; }
 
 @media screen and (min-width: 420px) and (max-width: 639px) {
   #logoMain img {
@@ -1237,7 +1211,6 @@ video {
 
 .memberBut {
   padding: 10px;
-  padding-top: 20px;
   border: 1px white solid; }
 
 #bookCourt a .cta-title {
@@ -1247,7 +1220,7 @@ video {
   display: inline-block;
   padding-top: 0px; }
 
-.bg-primary:hover {
+#memberContent .bg-primary:hover {
   box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.1);
   -webkit-transition: box-shadow 0.2s ease;
   -moz-transition: box-shadow 0.2s ease;
@@ -1293,10 +1266,10 @@ a.btn-white {
   width: 100%;
   height: 100%; }
 
-#teeOnBlock {
+.goldBlock {
   background-color: #d5a00e; }
 
-#teeOnBlock:hover {
+.goldBlock:hover {
   box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.1);
   -webkit-transition: box-shadow 0.2s ease;
   -moz-transition: box-shadow 0.2s ease;
@@ -1308,7 +1281,7 @@ a.btn-white {
   padding: 40px;
   border-radius: 20px; }
 
-#teeOnBlock {
+.goldBlock {
   padding: 20px;
   border-radius: 20px; }
 
@@ -1335,20 +1308,145 @@ a.btn-white {
     color: black; }
 
 @media screen and (min-width: 992px) {
-  #teeOnBlock {
-    margin-top: 60px; }
+  .goldBlock {
+    margin-top: 20px; }
 
   #socBlock {
     margin-top: 10px; } }
 @media screen and (min-width: 999px) {
   #squashVector {
     width: 5em; } }
-body, h1, h2, h3, .small-title {
-  font-family: "robotolight", sans-serif; }
+.select {
+  margin-bottom: 10px; }
 
-.row.no-gutters {
-  margin-right: -30px;
-  margin-left: -30px; }
+.pitch {
+  margin-bottom: 30px; }
+
+p.visitSub {
+  font-size: 1em;
+  width: 100%; }
+
+#bookPage.page-header {
+  background: url("../images/visit-mobile.jpg") no-repeat;
+  min-height: 20%;
+  padding-bottom: 0px;
+  background-size: 100%; }
+
+@media screen and (min-width: 321px) and (max-width: 414px) {
+  #bookPage.page-header {
+    background: url("../images/visit-iphoneplus.jpg") no-repeat;
+    min-height: 20%;
+    padding-bottom: 0px;
+    background-size: cover; } }
+@media screen and (min-width: 415px) and (max-width: 600px) {
+  #bookPage.page-header {
+    background: url("../images/visit-smalltab.jpg") center center no-repeat;
+    min-height: 40%;
+    padding-bottom: 0px;
+    background-size: cover; } }
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  #bookPage.page-header {
+    background: url("../images/visit-tab.jpg") center center no-repeat;
+    min-height: 10%;
+    padding-bottom: 0px;
+    background-size: cover; } }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #bookPage.page-header {
+    background: url("../images/visit-tab.jpg") center center no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size: cover; } }
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  #bookPage.page-header {
+    background: url("../images/visit-tab.jpg") center center no-repeat;
+    min-height: 40%;
+    padding-bottom: 0px;
+    background-size: cover; } }
+@media screen and (min-width: 1281px) and (max-width: 1500px) {
+  #bookPage.page-header {
+    background: url("../images/visit-midlarge.jpg") center center no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size: cover; } }
+@media screen and (min-width: 1501px) {
+  #bookPage.page-header {
+    background: url("../images/visit-large.jpg") center center no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size: cover; } }
+#programPage.page-header {
+  background: url("../images/programs-mobile.jpg") no-repeat;
+  min-height: 20%;
+  padding-bottom: 0px;
+  background-size: 100%; }
+
+.main-cta {
+  background-color: #00703c; }
+  .main-cta .cta-title {
+    font-size: 2.5em;
+    padding-top: 20px; }
+  .main-cta a.btn-white {
+    color: #00703c; }
+  .main-cta a.btn-white:hover {
+    color: white; }
+  .main-cta .btn {
+    padding: 20px 50px;
+    text-align: center; }
+
+#programContent .title {
+  color: black;
+  font-size: 0.85em; }
+#programContent h2 {
+  text-align: center; }
+#programContent p {
+  font-size: 1em; }
+#programContent .service-icon img {
+  width: 100%; }
+
+@media screen and (min-width: 321px) and (max-width: 414px) {
+  #programPage.page-header {
+    background: url("../images/programs-iphoneplus.jpg") no-repeat;
+    min-height: 20%;
+    padding-bottom: 0px;
+    background-size: cover; } }
+@media screen and (min-width: 415px) and (max-width: 600px) {
+  #programPage.page-header {
+    background: url("../images/programs-smalltab.jpg") center center no-repeat;
+    min-height: 40%;
+    padding-bottom: 0px;
+    background-size: cover; } }
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  #programPage.page-header {
+    background: url("../images/programs-tab.jpg") center center no-repeat;
+    min-height: 10%;
+    padding-bottom: 0px;
+    background-size: cover; } }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #programPage.page-header {
+    background: url("../images/programs-tab.jpg") center center no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size: cover; } }
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  #programPage.page-header {
+    background: url("../images/programs-tab.jpg") center center no-repeat;
+    min-height: 40%;
+    padding-bottom: 0px;
+    background-size: cover; } }
+@media screen and (min-width: 1281px) and (max-width: 1500px) {
+  #programPage.page-header {
+    background: url("../images/programs-midlarge.jpg") center center no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size: cover; } }
+@media screen and (min-width: 1501px) {
+  #programPage.page-header {
+    background: url("../images/programs-large.jpg") center center no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size: cover; } }
+body, h1, h2, h3, h4, .small-title {
+  font-family: "robotolight", sans-serif; }
 
 p.intro {
   font-style: italic; }

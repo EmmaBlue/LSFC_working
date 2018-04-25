@@ -18,7 +18,6 @@
 .memberBut {
 
   padding: 10px;
-  padding-top: 20px;
   border: 1px white solid;
 }
 
@@ -43,15 +42,21 @@
 
 
 
+#memberContent {
 
-.bg-primary:hover {
-  box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.1);
-  -webkit-transition: box-shadow 0.2s ease;
-  -moz-transition: box-shadow 0.2s ease;
-  -o-transition: box-shadow 0.2s ease;
-  transition: box-shadow 0.2s ease;
+  .bg-primary:hover {
+    box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.1);
+    -webkit-transition: box-shadow 0.2s ease;
+    -moz-transition: box-shadow 0.2s ease;
+    -o-transition: box-shadow 0.2s ease;
+    transition: box-shadow 0.2s ease;
+
+  }
+
 
 }
+
+
 
 .content {
 
@@ -118,12 +123,12 @@ a.btn-white {
     height: 100%;
 }
 
-#teeOnBlock {
+.goldBlock {
 
   background-color: $secondary;
 }
 
-#teeOnBlock:hover {
+.goldBlock:hover {
 
   box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.1);
   -webkit-transition: box-shadow 0.2s ease;
@@ -140,7 +145,7 @@ a.btn-white {
 }
 
 
-#teeOnBlock {
+.goldBlock {
 
   padding: 20px;
   border-radius: 20px;
@@ -197,9 +202,9 @@ a.btn-white {
 
 @media screen and(min-width:992px) {
 
-  #teeOnBlock {
+  .goldBlock {
 
-    margin-top: 60px;
+    margin-top: 20px;
   }
 
   #socBlock {
