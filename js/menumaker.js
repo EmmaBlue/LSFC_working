@@ -5,9 +5,10 @@
       var cssmenu = $(this), settings = $.extend({
         title: "Menu",
         format: "dropdown",
-        breakpoint: 768,
+        breakpoint: 999,
         sticky: false
       }, options);
+
 
       return this.each(function() {
         cssmenu.find('li ul').parent().addClass('has-sub');
@@ -90,6 +91,9 @@
         return $(window).on('resize', resizeFix);
 
       });
+
+
+
   };
 })(jQuery);
 

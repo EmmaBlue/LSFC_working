@@ -149,7 +149,7 @@ label { }
 .btn-primary:hover { background-color: #18150d; color: #fff; }
 .btn-primary.focus, .btn-primary:focus { }
 .btn-white { color: #aa9144; background-color: #fff; border: 1px solid #fff; }
-.btn-white:hover { background-color: #8e7424; border-color: #8e7424; color: #fff; }
+.btn-white:hover { background-color: #00703c; border-color: #fff; color: #fff; }
 .btn-white.focus, .btn-white:focus { background-color: #8e7424; border-color: #8e7424; color: #fff; }
 .btn-link { color: #98989c; text-transform: uppercase; font-size: 12px; font-weight: 700; letter-spacing: 2px; border-bottom: 1px solid #98989c; padding-bottom: 2px; }
 .btn-link:hover { color: #aa9144; font-weight: 700; text-decoration: none; border-bottom: 1px solid #aa9144; }
@@ -369,8 +369,8 @@ label { }
 #navigation.align-center > ul > li { display: inline-block; float: none; }
 #navigation.align-center ul ul { text-align: left; }
 #navigation.align-right > ul > li { float: right; }
-#navigation > ul > li > a { padding: 20px; font-size: 13px; color: #18150d; text-decoration: none; font-weight: 500; text-transform: uppercase; }
-#navigation > ul > li:hover > a { color: #ffffff; background-color: #aa9144; }
+#navigation > ul > li > a { padding: 20px; font-size: 13px; color: white; text-decoration: none; font-weight: 500; text-transform: uppercase; }
+#navigation > ul > li:hover > a { color: black; background-color: #aa9144; }
 #navigation > ul > li.has-sub > a { padding-right: 32px; }
 
 /*#navigation > ul > li.has-sub > a:after {
@@ -405,7 +405,7 @@ label { }
 #navigation ul ul li.has-sub > a:before { position: absolute; top: 13px; right: 14px; display: block; width: 2px; height: 8px; background: #dddddd; content: ''; -webkit-transition: all .25s ease; -moz-transition: all .25s ease; -ms-transition: all .25s ease; -o-transition: all .25s ease; transition: all .25s ease; }
 #navigation.align-right ul ul li.has-sub > a:before { right: auto; left: 14px; }
 #navigation ul ul > li.has-sub:hover > a:before { top: 17px; height: 0; }
-#navigation.small-screen { width: 100%; }
+#navigation.small-screen { width: 100%;  }
 #navigation.small-screen ul { width: 100%; display: none; }
 #navigation.small-screen.align-center > ul { text-align: left; }
 #navigation.small-screen ul li { width: 100%; border-top: 1px solid #474747; }
@@ -420,7 +420,7 @@ label { }
 #navigation.small-screen > ul > li.has-sub > a:after, #navigation.small-screen > ul > li.has-sub > a:before, #navigation.small-screen ul ul > li.has-sub > a:after, #navigation.small-screen ul ul > li.has-sub > a:before { display: none; }
 #navigation.small-screen #menu-button {display: block; padding: 15px; color: #474747; cursor: pointer; font-size: 12px;
    text-transform: uppercase; font-weight: 700; }
-#navigation.small-screen #menu-button:after { position: absolute; top: 16px; right: 17px; display: block; height: 12px; width: 20px; border-top: 2px solid #474747; border-bottom: 2px solid #474747; content: ''; }
+#navigation.small-screen #menu-button:after {z-index: 3; position: absolute; top: 16px; right: 17px; display: block; height: 12px; width: 20px; border-top: 2px solid #474747; border-bottom: 2px solid #474747; content: ''; }
 #navigation.small-screen #menu-button:before { position: absolute; top: 21px; right: 17px; display: block; height: 2px; width: 20px; background: #474747; content: ''; }
 #navigation.small-screen #menu-button.menu-opened:after { top: 23px; border: 0; height: 2px; width: 15px; background: #474747; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
 #navigation.small-screen #menu-button.menu-opened:before { top: 23px; background: #474747; width: 15px; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
@@ -456,7 +456,7 @@ label { }
 7. Content
 -------------------------------------*/
 
-.content { padding-top: 60px; padding-bottom: 60px; }
+.content { padding-top: 60px; padding-bottom: 0px; }
 
 /*-----------------------------------
 8. Footer
@@ -487,7 +487,7 @@ margin-bottom: 8px; padding: 0 0 8px 40px; color: #747474; }
 /*-------------- tiny footer ------------*/
 .tiny-footer {  padding-top: 19px; padding-bottom: 9px; font-size: 12px;
     color: #56575e; text-align: left; text-transform: uppercase; text-align: center; }
-.copyright-content { padding: 12px; color: #747474; }
+.copyright-content {color: #747474; }
 
 /*-----------------------------------
 9. Pages

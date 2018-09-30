@@ -1,6 +1,6 @@
 .footer {
 
-  background-color: #268559;//#40946d;
+  background-color: white;//#40946d;
   padding-bottom: 20px;
   padding-top: 20px;
 
@@ -14,9 +14,30 @@
 
 }
 
+h4 {
+
+  font-weight: bold;
+}
+
 .widget-newsletter button {
 
    height: 36px;
+}
+
+.hours {
+
+  margin-left: -15px;
+  margin-bottom: 10px;
+}
+
+.sHours {
+
+  margin-bottom: 20px;
+}
+
+div.bottom {
+
+  margin-bottom:20px;
 }
 
 .footer-block {
@@ -46,6 +67,7 @@
 }
 
 .footer-widget {
+
 
   .widget-title {
 
@@ -112,8 +134,6 @@
 
 .copyright-content {
 
-  padding-top: 0px;
-
   p:nth-child(3) {
 
     a {
@@ -131,4 +151,68 @@
     color: $primary;
   }
 
+}
+
+@media screen and (min-width:768px) and (max-width:990px) {
+
+  .footer-social {
+
+    margin-left: 25%;
+  }
+}
+
+@media screen and (min-width:920px) {
+
+  .footer-social {
+
+    margin-left: 0%;
+  }
+}
+
+@media screen and (min-width:992px) {
+
+  .footer-widget {
+
+
+    .widget-title {
+
+      font-size: 1.3em;
+    }
+
+    p {
+
+      font-size: 0.85em;
+    }
+
+
+  }
+
+  .copyright-content {
+
+    padding: 0px;
+
+    p {
+
+      display: inline;
+      margin-right:20px;
+
+
+    }
+
+    #finalP {
+
+      a {
+
+          margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .footer-widget .widget-title {
+
+    margin-bottom: 5px;
+  }
 }

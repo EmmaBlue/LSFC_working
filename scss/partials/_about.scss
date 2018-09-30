@@ -1,0 +1,235 @@
+
+#aboutContent.content {
+
+  margin-bottom:20px;
+}
+
+.boardMember {
+
+  display:inline-block;
+  margin-right:20px;
+
+  div.boardPic {
+
+    height: 100px;
+    width: 100px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+  }
+
+  h4.boardTitle {
+
+    font-weight: bold;
+    color: $primary;
+  }
+}
+
+#aboutPage.page-header {
+
+  background: url("../images/about-mobile.jpg") no-repeat;
+  min-height: 50%;
+  padding-bottom: 0px;
+  background-size:100%;
+
+}
+
+#aboutContent.content {
+
+  padding-top: 0px;
+
+  p:last-child {
+
+    margin-bottom: 20px;
+  }
+}
+
+.lead {
+
+
+  font-size: 1.1em;
+  font-family: $subheadingFont;
+  text-align: center;
+
+  span {
+
+    color: $primary;
+  }
+
+  span:nth-child(2) {
+
+    color: $secondary;
+  }
+  p {
+
+    font-size: 0.85em;
+  }
+
+}
+
+.alignright {
+
+  margin: 0px 0px 20px 30px;
+}
+
+ul.navPicList {
+
+  list-decoration: none;
+
+  li {
+
+      display: inline-block;
+  }
+
+}
+
+
+.boardTitle {
+  text-align: center;
+}
+
+.boardName {
+  text-align: center;
+}
+
+  #slideshow {
+
+  	position: relative;
+  	right: 0px;
+    overflow:hidden;
+    display:inline-block;
+  	-webkit-transition: all 0.7s ease;
+  	-moz-transition: all 0.7s ease;
+  	-o-transition:all 0.7s ease;
+  	transition: all 0.7s ease;
+  }
+
+  .about-pic {
+
+    width: 50%;
+  }
+
+  .gal-pic {
+
+    margin-bottom: 20px;
+  }
+
+//Background Image Queries
+
+@media screen and (min-width:321px) and (max-width:414px) {
+
+  #aboutPage.page-header {
+
+    background: url("../images/about-iphoneplus.jpg") no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size:100%;
+  }
+}
+
+@media screen and (min-width:415px) and (max-width:600px) {
+
+  #aboutPage.page-header {
+
+    background: url("../images/about-smalltab.jpg") no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size:100%;
+  }
+}
+
+@media screen and (min-width:601px) and (max-width:768px) {
+
+  #aboutPage.page-header {
+
+    background: url("../images/about-tab.jpg") no-repeat;
+    min-height: 40%;
+    padding-bottom: 0px;
+    background-size:100%;
+  }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+  #aboutPage.page-header {
+
+    background: url("../images/about-tab.jpg") no-repeat;
+    min-height: 40%;
+    padding-bottom: 0px;
+    background-size:100%;
+  }
+}
+
+
+@media screen and (min-width:1025px) and (max-width:1280px) {
+
+  #aboutPage.page-header {
+
+    background: url("../images/about-tab.jpg") no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+  background-size:100%;
+  }
+}
+
+@media screen and (min-width:1281px) and (max-width:1500px) {
+
+  #aboutPage.page-header {
+
+    background: url("../images/about-midlarge.jpg") no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size:100%;
+  }
+
+}
+
+@media screen and (min-width:1501px) {
+
+  #aboutPage.page-header {
+
+    background: url("../images/about-large.jpg") no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size:100%;
+  }
+
+}
+
+//Subheading Styles
+
+@media screen and (min-width: 320px) and (max-width: 1000px) {
+
+  .lead {
+
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width:767px) {
+
+  .lead {
+
+    font-size: 1.25em;
+  }
+}
+
+@media screen and (min-width: 768px)  {
+
+  .lead {
+
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1000px)  {
+
+  .lead {
+
+    text-align:left;
+    padding-top: 40px;
+
+  }
+}

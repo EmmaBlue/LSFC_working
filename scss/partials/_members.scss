@@ -1,0 +1,226 @@
+.bg-primary {
+
+  background-color: $primary;
+}
+
+#memberContent.content {
+
+  padding-top: 20px;
+}
+
+#squashVector {
+
+  width: 2em;
+  margin-right: 25px;
+  margin-top: -20px;
+}
+
+.memberBut {
+
+  padding: 10px;
+  border: 1px white solid;
+}
+
+#bookCourt {
+
+  a {
+
+    .cta-title {
+
+      font-family: $regFont;
+      color: white;
+      text-align:center;
+      display: inline-block;
+      padding-top: 0px;
+      }
+
+
+    }
+
+
+  }
+
+
+
+#memberContent {
+
+  .bg-primary:hover {
+    box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.1);
+    -webkit-transition: box-shadow 0.2s ease;
+    -moz-transition: box-shadow 0.2s ease;
+    -o-transition: box-shadow 0.2s ease;
+    transition: box-shadow 0.2s ease;
+
+  }
+
+
+}
+
+
+
+.content {
+
+  background-color: white;
+}
+
+a.btn-white {
+
+  background-color: white;
+  color: white;
+  font-family: $butFont;
+}
+
+@media screen and (min-width:414px) {
+
+  #squashVector {
+
+    width: 3em;
+    margin-right: 25px;
+    margin-top: -20px;
+  }
+
+  .memberBut {
+
+    padding: 40px;
+    padding-top: 50px;
+    border: 1px white solid;
+  }
+
+  #bookCourt {
+
+    a {
+
+      .cta-title {
+
+        font-family: $regFont;
+        color: white;
+        text-align:center;
+        display: inline-block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        }
+
+
+      }
+
+
+    }
+}
+
+
+.calContainer {
+  position: relative;
+ padding-bottom: 75%;
+ height: 0;
+ overflow: hidden;
+}
+
+.calContainer iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.goldBlock {
+
+  background-color: $secondary;
+}
+
+.goldBlock:hover {
+
+  box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.1);
+  -webkit-transition: box-shadow 0.2s ease;
+  -moz-transition: box-shadow 0.2s ease;
+  -o-transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease;
+}
+
+#socBlock{
+
+  background-color: $primary;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+
+.goldBlock {
+
+  padding: 20px;
+  border-radius: 20px;
+}
+
+
+.service-icon {
+
+  img {
+
+    width: 3em;
+  }
+
+  a:hover {
+
+    color: black;
+  }
+}
+
+.title {
+
+  color: white;
+}
+
+.title:hover {
+
+  color: white;
+}
+
+.mainSoc {
+
+  margin-right: 30px;
+  margin-top: 20px;
+
+  li {
+
+    list-style-type: none;
+
+  }
+
+  a {
+
+   font-size: 1.7em;
+   color: white;
+  }
+
+  a:hover {
+
+    color: black;
+  }
+
+
+}
+
+@media screen and(min-width:992px) {
+
+  .goldBlock {
+
+    margin-top: 20px;
+  }
+
+  #socBlock {
+
+    margin-top: 10px;
+  }
+
+}
+
+
+@media screen and(min-width:999px) {
+
+  #squashVector {
+
+    width: 5em;
+
+  }
+
+}

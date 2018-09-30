@@ -1,0 +1,272 @@
+#contactPage.page-header {
+
+  background: url("../images/contact-mobile.jpg") no-repeat;
+  min-height: 50%;
+  padding-bottom: 0px;
+  background-size:100%;
+}
+
+#navRow.contactPage  {
+
+
+}
+
+
+//Background Image Queries
+
+@media screen and (min-width:321px) and (max-width:414px) {
+
+  #contactPage.page-header {
+
+    background: url("../images/contact-iphoneplus.jpg") no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size:100%;
+  }
+}
+
+@media screen and (min-width:415px) and (max-width:600px) {
+
+  #contactPage.page-header {
+
+    background: url("../images/contact-smalltab.jpg") no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size:100%;
+  }
+}
+
+@media screen and (min-width:601px) and (max-width:768px) {
+
+  #contactPage.page-header {
+
+    background: url("../images/contact-tab.jpg") no-repeat;
+    min-height: 40%;
+    padding-bottom: 0px;
+    background-size:100%;
+  }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+  #contactPage.page-header {
+
+    background: url("../images/contact-tab.jpg") no-repeat;
+    min-height: 40%;
+    padding-bottom: 0px;
+    background-size:100%;
+  }
+}
+
+
+@media screen and (min-width:1025px) and (max-width:1280px) {
+
+  #contactPage.page-header {
+
+    background: url("../images/contact-tab.jpg") no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size:100%;
+  }
+}
+
+@media screen and (min-width:1281px) and (max-width:1500px) {
+
+  #contactPage.page-header {
+
+    background: url("../images/contact-midlarge.jpg") no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size:100%;
+  }
+}
+
+@media screen and (min-width:1501px)  {
+
+  #contactPage.page-header {
+
+    background: url("../images/contact-large.jpg") no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size:cover;
+  }
+}
+
+//End of Background Queries
+
+.page-title {
+
+  color: $secondary;
+  font-size: 2em;
+  font-family:$subheadingFont;
+}
+
+//Header Queries
+
+@media screen and (min-width:600px) and (max-width:1199px) {
+
+  .page-title {
+
+    color: $secondary;
+    font-size: 3em;
+    margin-top: 0px;
+    font-family:$subheadingFont;
+  }
+}
+
+@media screen and (min-width:1200px) {
+
+  .page-title {
+
+    color: $secondary;
+    font-size: 5em;
+    margin-bottom:0px;
+    font-family:$subheadingFont;
+  }
+}
+
+//End of Header Queries
+.widget-contact {
+
+  background-color: white;
+  margin-top: -40px;
+}
+
+.widget {
+
+  background-color: white;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+
+  iframe {
+
+    width: 100%; ;
+    min-height: 320px;
+  }
+}
+
+//Social Media Styles
+
+.widget-social {
+
+  margin-bottom: 30px;
+}
+
+.widget-social .social-circle {
+
+a {
+
+  background-color: transparent;
+}
+
+.widget-social .social-circle .fa {
+
+  font-size: 1.5em;
+  text-align: center;
+}
+
+
+.fa {
+
+  color: $background;
+  background-color: $secondary;
+  padding: 10px;
+  }
+
+.fa:hover, .fa:active {
+
+  opacity: $opacity;
+  filter: Alpha(opacity=80);
+}
+.fa-facebook {
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+  }
+
+.fa-twitter {
+
+      padding: 10px;
+      margin-left: 2.5px;
+
+  }
+
+}
+
+//Social Media and Map Queries
+
+@media screen and (min-width: 600px) {
+
+  .widget-social .social-circle .fa {
+
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .widget-social .social-circle .fa-twitter {
+
+    margin-left: 1px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+  .widget  iframe {
+
+    width: 100% ;
+    min-height: 650px;
+  }
+
+}
+
+@media screen and (min-width: 992px){
+
+  .widget  iframe {
+
+    width: 100% ;
+    min-height: 500px;
+  }
+
+}
+
+
+.hours {
+
+  padding-left: -15px;
+}
+
+
+//Form Styles
+
+#formContain.col-xs-12 {
+
+  padding-left: 30px;
+  padding-right: 30px;
+
+  #messageContain {
+
+    padding-left: 15px;
+  }
+
+
+}
+
+#contactContent.content {
+
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+
+  #contactPage h1 {
+
+    font-size: 1em;
+  }
+
+  #formContain {
+
+    margin-top: -40px;
+  }
+}

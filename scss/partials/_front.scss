@@ -1,0 +1,265 @@
+
+
+#container {
+  overflow: hidden;
+  height: 480px;
+  background: #edeae8;
+  position: relative;
+}
+
+
+video {
+  position: absolute;
+
+  /* Vertical and Horizontal center*/
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $primary;
+}
+
+#overlay {
+  position: absolute;
+  top: 0; right: 0; left: 0; bottom: 0;
+
+  background: rgba(225,225,225,0.6);
+
+  ul {
+
+    list-style: none;
+    padding-right: 3em;
+    margin-top: 20px;
+    text-align: center;
+
+    li {
+
+        text-align: center;
+
+        a {
+
+          font-size: 1.2em;
+        }
+    }
+
+  }
+
+  p {
+
+    margin-top: 1em;
+    margin-bottom: 0.7em;
+  }
+}
+
+
+#logoMain img {
+
+  margin: 0 auto;
+  display: block;
+  width: 60%;
+  margin-top: 5em;
+}
+
+#overlay {
+
+  #ctaFront  {
+
+    .membersOnly {
+
+      font-size: 0.8em;
+      color: black;
+      font-weight: bold;
+      border: 1px white solid;
+
+      display: inline;
+      padding: 10px;
+      margin-top: 20px;
+      margin-left: 10px;
+
+
+
+
+    }
+
+
+
+  }
+
+#ctaFront li.membersOnly  {
+
+    a {
+
+      color: $primary;
+    }
+
+    a:hover {
+
+      color: $secondary;
+    }
+
+  }
+
+
+
+}
+
+
+
+
+@media screen and (min-width: 420px) and (max-width: 639px) {
+
+
+  #logoMain img {
+
+    width: 50%;
+    margin-top: 2em;
+  }
+
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 786px)  {
+
+
+  #logoMain img {
+
+    width: 40%;
+    margin-top: 2em;
+  }
+
+  #overlay p {
+
+    margin-top: 0em;
+  }
+
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 999px)  {
+
+
+  #logoMain img {
+
+    width: 30%;
+    margin-top: 2em;
+  }
+
+
+  #overlay {
+
+    ul {
+
+      list-style: none;
+      padding-right: 3em;
+      margin-top: 20px;
+      text-align: center;
+
+      li {
+
+          text-align: center;
+
+          a {
+
+            font-size: 1.5em;
+          }
+      }
+
+    }
+
+    p {
+      font-size: 1em;
+      margin-top: 0em;
+    }
+  }
+
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+
+  #logoMain img {
+
+    width: 30%;
+    margin-top: 2em;
+  }
+
+
+  #overlay {
+
+    ul {
+
+      list-style: none;
+      padding-right: 3em;
+      margin-top: 20px;
+      text-align: center;
+
+      li {
+
+          text-align: center;
+
+          a {
+
+            font-size: 1.5em;
+          }
+      }
+
+    }
+
+    p {
+
+      font-size: 1em;
+      margin-top: 0em;
+    }
+
+    .lead {
+
+      text-align: center;
+      padding-top: 0px;
+    }
+  }
+
+
+}
+
+@media screen and (min-width: 1301px) {
+
+  #logoMain img {
+
+    width: 20%;
+    margin-top: 2em;
+  }
+
+
+  #overlay {
+
+    ul {
+
+      list-style: none;
+      padding-right: 3em;
+      margin-top: 20px;
+      text-align: center;
+
+      li {
+
+          text-align: center;
+
+          a {
+
+            font-size: 1.5em;
+          }
+      }
+
+    }
+
+    p {
+
+      font-size: 1em;
+      margin-top: 0em;
+    }
+
+    .lead {
+
+      text-align: center;
+      padding-top: 0px;
+    }
+  }
+
+
+}

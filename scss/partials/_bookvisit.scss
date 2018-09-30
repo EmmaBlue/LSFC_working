@@ -1,0 +1,105 @@
+.select {
+
+  margin-bottom: 10px;
+}
+
+.pitch {
+
+  margin-bottom: 30px;
+}
+
+
+
+p.visitSub {
+
+  font-size: 1em;
+  width: 100%;
+
+}
+#bookPage.page-header {
+
+  background: url("../images/visit-mobile.jpg") no-repeat;
+  min-height: 20%;
+  padding-bottom: 0px;
+  background-size:100%;
+}
+
+//Background Image Queries
+
+@media screen and (min-width:321px) and (max-width:414px) {
+
+  #bookPage.page-header {
+
+    background: url("../images/visit-iphoneplus.jpg") no-repeat;
+    min-height: 20%;
+    padding-bottom: 0px;
+    background-size:cover;
+  }
+}
+
+@media screen and (min-width:415px) and (max-width:600px) {
+
+  #bookPage.page-header {
+
+    background: url("../images/visit-smalltab.jpg") center center no-repeat;
+    min-height: 40%;
+    padding-bottom: 0px;
+    background-size:cover;
+  }
+}
+
+@media screen and (min-width:601px) and (max-width:768px) {
+
+  #bookPage.page-header {
+
+    background: url("../images/visit-tab.jpg") center center no-repeat;
+    min-height: 10%;
+    padding-bottom: 0px;
+    background-size:cover;
+  }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+  #bookPage.page-header {
+
+    background: url("../images/visit-tab.jpg") center center no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size:cover;
+  }
+}
+
+
+@media screen and (min-width:1025px) and (max-width:1280px) {
+
+  #bookPage.page-header {
+
+    background: url("../images/visit-tab.jpg") center center no-repeat;
+    min-height: 40%;
+    padding-bottom: 0px;
+    background-size:cover;
+  }
+}
+
+@media screen and (min-width:1281px) and (max-width:1500px) {
+
+  #bookPage.page-header {
+
+    background: url("../images/visit-midlarge.jpg") center center no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size:cover;
+  }
+}
+
+@media screen and (min-width:1501px)  {
+
+  #bookPage.page-header {
+
+    background: url("../images/visit-large.jpg") center center no-repeat;
+    min-height: 50%;
+    padding-bottom: 0px;
+    background-size:cover;
+  }
+}

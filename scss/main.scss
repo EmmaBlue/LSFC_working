@@ -1,15 +1,36 @@
 @import 'base/_variables';
 @import 'partials/_nav';
+@import 'partials/_nav_contact';
 @import 'partials/_home';
 @import 'partials/_community';
 @import 'partials/_freetrial';
 @import 'partials/_testimonials';
 @import 'partials/_bookcourt';
+@import 'partials/_nashcup';
+@import 'partials/_contact';
+@import 'partials/_about';
 @import 'partials/_footer';
+@import 'partials/_front';
+@import 'partials/_members';
+@import 'partials/_bookvisit';
+@import 'partials/_programs';
 
-body, h1, h2, .small-title {
+body, h1, h2, h3, h4, .small-title {
 
   font-family: $regFont;
+}
+
+
+
+
+p.intro {
+
+  font-style: italic;
+}
+
+.content {
+
+  padding-bottom: 0px;
 }
 
 .space-medium {
@@ -18,9 +39,14 @@ body, h1, h2, .small-title {
   padding-bottom: 25px;
 }
 
-a, a:hover, a:active, a:focus {
+a {
 
   color: $secondary;
+}
+
+a:hover, a:active, a:focus {
+
+  color: $primary;
 }
 
 html, body {
@@ -39,7 +65,7 @@ h1 {
 
 p {
 
-  font-size: 0.8em;
+  font-size: 0.85em;
   font-family: $regFont;
 }
 

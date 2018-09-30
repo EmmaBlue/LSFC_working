@@ -1,9 +1,30 @@
-// Nav
+// Index Nav Styles
+
 
 #navContain {
 
   display: relative;
 }
+
+#mobileNavContain {
+
+  background-color: $secondary;
+  display: inline-block;
+}
+
+#logoContain {
+
+  margin-top:-10px;
+
+  img {
+
+    height: 3em;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding-left: 90%;
+  }
+}
+
 
  #navigation {
 
@@ -12,15 +33,41 @@
    top: -2em;
    right: 0px;
    width: 100%;
- }
-  #navRow.row{
 
-    margin-top: -20px;
+   ul li {
+
+     a:hover, a:active, a:focus {
+
+       background-color: $secondary;
+     }
+   }
+
+   ul li.socNavContain {
+
+     a {
+
+       background-color: transparent
+     }
+
+     a:hover, a:active, a:focus {
+
+
+     }
+   }
+ }
+
+#navRow {
+
+  background-color: $secondary;
 }
+
+
+
 
 #navigation {
 
   margin: 0 0 0 15px;
+
 }
 
  #navigation.small-screen {
@@ -42,14 +89,17 @@
            background-color: $secondary;
            color: white;
            width: 200%;
+           font-size: 0.9em;
          }
 
          a.socNav {
 
            padding: 10px 10px 0px;
-           display: inline;
+           display: block;
            background-color: $secondary;
          }
+
+
 
      }
 
@@ -59,6 +109,8 @@
        background-color: $secondary;
        padding: 15px;
      }
+
+
 
    }
 
@@ -73,6 +125,7 @@
    #menu-button {
 
       padding: 15px;
+      margin-top: 25px;
    }
 
    #menu-button:hover, #menu-button:active {
@@ -83,7 +136,7 @@
 
    #menu-button::before {
 
-      background: green;
+      background: $primary;
     }
 
     #menu-button::after {
@@ -104,3 +157,408 @@
     }
 
  }
+
+ @media screen and (min-width: 1000px) {
+
+   ul  {
+
+
+     li  {
+
+
+         a.socNav {
+
+
+           display: inline;
+
+         }
+
+
+
+     }
+ }
+
+}
+
+ @media screen and (min-width: 375px) {
+
+  #navigation.small-screen {
+
+    #menu-button::before {
+
+      top: 26.5px;
+      right: 30px;
+      height: 2px;
+      width: 30px;
+    }
+
+    #menu-button::after {
+
+      top: 20px;
+      right: 30px;
+      height: 15px;
+      width: 30px;
+    }
+
+  }
+
+
+
+ }
+
+
+
+ //Logo Queries
+
+
+ @media screen and (min-width:600px) and (max-width:768px) {
+
+   #logoContain {
+
+     img {
+
+      height: 4em;
+
+    }
+
+
+   }
+
+
+ }
+
+ @media screen and (min-width:1000px) {
+
+   #logoContain {
+
+     img {
+
+      padding-left: 0%;
+
+    }
+
+
+   }
+
+
+ }
+
+ @media screen and (min-width: 600px) {
+
+  #navigation.small-screen {
+
+    #menu-button::before {
+
+      top: 26.5px;
+      right: 35px;
+      height: 2px;
+      width: 40px;
+    }
+
+    #menu-button::after {
+
+      top: 20px;
+      right: 35px;
+      height: 15px;
+      width: 40px;
+    }
+
+  }
+
+
+
+ }
+
+ @media screen and (min-width: 768px) {
+
+  #navigation.small-screen {
+
+    #menu-button::before {
+
+      top: 38px;
+      right: 35px;
+      height: 2px;
+      width: 50px;
+    }
+
+    #menu-button::after {
+
+      top: 25px;
+      right: 35px;
+      height: 28px;
+      width: 50px;
+    }
+
+  }
+
+ }
+
+ //Desktop Nav
+
+@media screen and (min-width: 999px) and (max-width: 1023px) {
+
+  #navigation ul  {
+
+    .membersOnly a {
+
+      border: 1px white solid;
+      border-radius: 20px;
+      margin-left: 5px;
+      padding: 10px;
+      margin-top:10px;
+    }
+  }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  #navigation ul  {
+
+    width: 100%;
+
+    .membersOnly a {
+
+      border: 1px white solid;
+      border-radius: 20px;
+      margin-left: 5px;
+      padding: 10px;
+      margin-top:0px;
+    }
+  }
+
+
+}
+
+
+ @media screen and (min-width: 1551px) and (max-width: 1800px){
+
+   #navRow.row{
+
+     margin-left: 10%;
+
+
+   }
+
+ }
+
+ @media screen and (min-width: 1200px) {
+
+
+   #mainContent {
+
+     .col-lg-6 {
+
+       margin-left: 5%;
+     }
+   }
+ }
+
+ @media screen and (min-width: 1200px){
+
+
+  .hero-section {
+
+    #logoContain {
+
+      margin-right: 0px;
+      margin-left: 0px;
+
+    }
+
+  }
+}
+
+ @media screen and (min-width: 1000px) and (max-width: 1199px){
+
+
+  .hero-section {
+
+    #logoContain {
+
+      margin-right: 0px;
+      margin-left: -100px;
+
+      img {
+
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding-top: 27px;
+      }
+
+    }
+
+  }
+
+  #navigation > ul > li > a {
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+  }
+
+  #navigation > ul > li > .socNav {
+
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+
+ .hero-section {
+
+
+   #navContain {
+
+     display: inline;
+   }
+
+    #navigation {
+
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+      display: inline;
+      top: 1px;
+      left: -50px;
+    }
+
+ }
+
+
+}
+
+ @media screen and (min-width: 1000px) and (max-width: 1199px) {
+
+
+  .hero-section {
+
+
+    #navContain {
+
+      display: inline;
+    }
+
+     #navigation {
+
+       z-index: 1;
+       position: absolute;
+       width: 100%;
+       display: inline;
+     }
+
+  }
+
+
+ }
+
+//Longform Nav
+
+@media screen and (min-width: 1200px)  {
+
+  #logoContain {
+
+    a {
+
+      margin-left: 12%;
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+  #navigation {
+
+    img {
+
+      height: 5em;
+      margin-bottom: 20px;
+    }
+
+  }
+
+
+  }
+
+
+@media screen and (min-width:769px) and (max-width:999px) {
+
+  #logoContain {
+
+    img {
+
+      height: 5em;
+    }
+  }
+}
+
+@media screen and (min-width:769px) {
+
+ #navigation {
+
+
+   li.socNavContain {
+
+      a.socNav {
+
+      display: inline-block;
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+
+  }
+
+ }
+
+  }
+
+
+@media screen and (min-width: 900px) and (max-width: 999px) {
+
+  #mainContent div:nth-child(1).col-lg-6.col-md-6.col-sm-6.col-xs-12 {
+
+    padding-left: 30px;
+  }
+
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+  #navigation ul li a {
+
+    padding: 12px;
+  }
+
+  #logoContain {
+
+    img {
+
+      height: 4em;
+    }
+
+  }
+
+  #mainSocial ul .fa-twitter {
+
+    padding: 3px;
+  }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+  .hero-section #navigation {
+
+    left:-100px;
+  }
+}
+
+//Contact Nav Styles
