@@ -517,7 +517,7 @@
   border: thin solid #8e8e8e; }
 
 .controls {
-  margin-top: .5em; }
+  margin-top: 0em; }
 
 /*[data-icon]:not([data-icon:pause-circle]):not([data-icon:play-circle]) {
   font-size: 2em;
@@ -1254,7 +1254,6 @@ div.bottom {
   .footer-widget .widget-title {
     margin-bottom: 5px; } }
 #container {
-  overflow: hidden;
   background: #edeae8;
   position: relative; }
 
@@ -1309,14 +1308,13 @@ div.bottom {
 @media screen and (min-width: 640px) and (max-width: 786px) {
   #logoMain img {
     width: 40%;
-    margin-top: 2em; }
+    margin-top: 10em; }
 
   #overlay p {
     margin-top: 0em; } }
-@media screen and (min-width: 769px) and (max-width: 999px) {
+@media screen and (min-width: 787px) and (max-width: 999px) {
   #logoMain img {
-    width: 30%;
-    margin-top: 2em; }
+    width: 30%; }
 
   #overlay ul {
     list-style: none;
@@ -1334,7 +1332,10 @@ div.bottom {
 @media screen and (min-width: 1000px) and (max-width: 1300px) {
   #logoMain img {
     width: 30%;
-    margin-top: 2em; }
+    margin-top: 10em; }
+
+  #container {
+    height: 800px; }
 
   #overlay ul {
     list-style: none;
@@ -1352,10 +1353,19 @@ div.bottom {
   #overlay .lead {
     text-align: center;
     padding-top: 0px; } }
+@media screen and (min-width: 1301px) and (max-width: 1440px) {
+  #container {
+    height: 800px; } }
+@media screen and (min-width: 1441px) {
+  #container {
+    height: 100%; }
+
+  #logoMain img {
+    margin-top: 40%; } }
 @media screen and (min-width: 1301px) {
   #logoMain img {
     width: 20%;
-    margin-top: 2em; }
+    margin-top: 10em; }
 
   #overlay ul {
     list-style: none;

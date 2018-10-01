@@ -1,7 +1,6 @@
 
 
 #container {
-  overflow: hidden;
   background: #edeae8;
   position: relative;
 
@@ -132,7 +131,7 @@
   #logoMain img {
 
     width: 40%;
-    margin-top: 2em;
+    margin-top: 10em;
   }
 
   #overlay p {
@@ -143,13 +142,12 @@
 
 }
 
-@media screen and (min-width: 769px) and (max-width: 999px)  {
+@media screen and (min-width: 787px) and (max-width: 999px)  {
 
 
   #logoMain img {
 
     width: 30%;
-    margin-top: 2em;
   }
 
 
@@ -188,7 +186,12 @@
   #logoMain img {
 
     width: 30%;
-    margin-top: 2em;
+    margin-top: 10em;
+  }
+
+  #container {
+    height: 800px;
+  
   }
 
 
@@ -230,13 +233,36 @@
 
 }
 
+@media screen and (min-width: 1301px) and (max-width: 1440px){
+
+  #container {
+    height: 800px;
+  
+  }
+}
+
+@media screen and (min-width: 1441px){
+
+  #container {
+    height: 100%;
+  
+  }
+
+  #logoMain img {
+
+    margin-top: 40%;
+  }
+}
+
 @media screen and (min-width: 1301px) {
 
   #logoMain img {
 
     width: 20%;
-    margin-top: 2em;
+    margin-top: 10em;
   }
+
+ 
 
 
   #overlay {
