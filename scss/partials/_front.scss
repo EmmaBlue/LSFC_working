@@ -2,20 +2,11 @@
 
 #container {
   overflow: hidden;
-  height: 480px;
   background: #edeae8;
   position: relative;
+
 }
 
-
-video {
-  position: absolute;
-
-  /* Vertical and Horizontal center*/
-  left: 50%; top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: $primary;
-}
 
 #overlay {
   position: absolute;
@@ -28,6 +19,7 @@ video {
     list-style: none;
     padding-right: 3em;
     margin-top: 20px;
+    margin-bottom: 10px;
     text-align: center;
 
     li {
@@ -64,7 +56,7 @@ video {
 
     .membersOnly {
 
-      font-size: 0.8em;
+      font-size: 0.7em;
       color: black;
       font-weight: bold;
       border: 1px white solid;
@@ -80,6 +72,24 @@ video {
     }
 
 
+
+  }
+
+  @media screen and (min-width: 375px) {
+    #overlay {
+
+      #ctaFront  {
+    
+        .membersOnly {
+    
+          font-size: 0.8em;
+    
+        }
+    
+    
+    
+      }
+  }
 
   }
 
@@ -150,6 +160,7 @@ video {
       list-style: none;
       padding-right: 3em;
       margin-top: 20px;
+      margin-bottom: 10px;
       text-align: center;
 
       li {
@@ -188,6 +199,7 @@ video {
       list-style: none;
       padding-right: 3em;
       margin-top: 20px;
+      margin-bottom: 10px;
       text-align: center;
 
       li {
@@ -234,6 +246,7 @@ video {
       list-style: none;
       padding-right: 3em;
       margin-top: 20px;
+      margin-bottom: 10px;
       text-align: center;
 
       li {

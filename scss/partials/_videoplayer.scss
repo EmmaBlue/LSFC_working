@@ -1,0 +1,246 @@
+#playContainer {
+
+    margin: 0 auto;
+    display: block;
+    width: 15%;
+
+}
+
+@media screen and (min-width:375px) and (max-width: 599px) {
+
+    #playContainer {
+
+        margin: 0 auto;
+        display: block;
+        width: 10%;
+    
+    }
+
+}
+
+@media screen and (min-width:600px) and (max-width: 900px) {
+
+    #playContainer {
+
+        margin: 0 auto;
+        display: block;
+        width: 7%;
+    
+    }
+
+}
+
+@media screen and (min-width:901px) {
+
+    #playContainer {
+
+        margin: 0 auto;
+        display: block;
+        width: 4%;
+    
+    }
+
+}
+
+#playBtn {
+
+    font-size: 3em;
+    color: $primary;
+}
+
+/* Background Video */
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+    overflow: hidden;
+  }
+  
+  .video-container {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* OBJECT FIT property to fit the video to the element */
+  }
+  
+  /* Background Video end*/
+
+  /* VIDEO PLAYER / Video Controls CSS RULES */
+
+.videoScreen {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 4rem 0;
+    background-color: white;
+  }
+  
+  .close-videoScreen {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-family: $regFont; 
+    font-size: 4rem;
+    color:black;
+    cursor: pointer;
+  }
+  
+  .show-videoPlayer {
+    display: block;
+  }
+  
+  #videoElement {
+    width: 80%;
+    border: thin solid #8e8e8e;
+  }
+  
+  .controls {
+    margin-top: .5em;
+  }
+  
+  /*[data-icon]:not([data-icon:pause-circle]):not([data-icon:play-circle]) {
+    font-size: 2em;
+  }*/
+  
+  .controls ul [data-icon] {
+    cursor: pointer;
+  }
+  
+  .controls ul {
+    list-style: none;
+  }
+  
+  .controls ul li {
+    display: inline-block;
+    padding: 0.1em;
+  }
+  
+  .play-pause {
+    width: 2rem;
+    margin: 0 2rem;
+  }
+  
+  /* CLIP RANGE INPUT Crossbrowser */
+  
+  input[type="range"] {
+    margin: auto;
+    -webkit-appearance: none;
+    position: relative;
+    overflow: hidden;
+    height: 10px;
+    width: 400px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  input[type=range]:focus {
+    outline: none;
+  }
+  
+  ::-webkit-slider-runnable-track {
+    background:grey;
+    border: none;
+  }
+  
+  ::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background:grey;
+    box-shadow: -100vw 0 0 100vw $secondary ;
+  }
+  
+  ::-moz-range-track {
+    height: 40px;
+    background:grey;
+  }
+  
+  ::-moz-range-thumb {
+    background:grey;
+    height: 40px;
+    width: 20px;
+    border-radius: 50%;
+    box-shadow: -100vw 0 0 100vw $secondary;
+    box-sizing: border-box;
+  }
+  
+  ::-ms-fill-lower {
+    background: $secondary;
+  }
+  
+  ::-ms-thumb {
+    background: grey;
+    border-radius: 50%;
+    height: 40px;
+    width: 20px;
+    box-sizing: border-box;
+  }
+  
+  ::-ms-ticks-after {
+    display: none;
+  }
+  
+  ::-ms-ticks-before {
+    display: none;
+  }
+  
+  ::-ms-track {
+    background:grey;
+    color: transparent;
+    height: 40px;
+    border: none;
+  }
+  
+  ::-ms-tooltip {
+    display: none;
+  }
+  
+  /* END INPUT RANGE RULES*/
+  
+  #muteBtn {
+    color:grey; 
+    cursor: pointer;
+  }
+  
+  #volumeBar {
+    width: 200px;
+  }
+  
+  #clipTiming {
+    font-size: 1.1em;
+    vertical-align: bottom;
+    position: relative;
+    bottom: 0px;
+  }
+  
+  /* Controls On  Mobile */
+  
+  #clipBar,
+  #clipTiming,
+  #volumeBar,
+  #muteBtn {
+    display: none;
+  }
+  
+  /* Controls On  Mobile  end */
+
+  @media screen and (min-width: 1024px) {
+
+    #clipBar,
+  #clipTiming,
+  #volumeBar,
+  #muteBtn {
+    display: inline;
+  }
+  }
+  
+  /* VIDEO PLAYER CSS RULES end */
+

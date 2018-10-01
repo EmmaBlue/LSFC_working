@@ -12,7 +12,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7cMontserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- Style -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -29,30 +29,70 @@
             <div class="row no-gutters">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <h1 class="hero-title hidden">London Squash & Fitness Club</h1>
-                    <div id="container">
-                        <video autoplay muted loop>
-                        <source src="video/lsfcvideo.mp4" type="video/mp4">
+                    <div class="bg-video" id="container">
+                        <video class="bg-video__content" autoplay muted loop>
+                        <!-- <source> element changes dynamically based on screen size from JS-->
                        </video>
                     </div>
-                    <div id="overlay">
+                    <section id="overlay">
                           <a id="logoMain" href="home.html"><img src="images/lsfc-logo.svg" alt="London Squash and Fitness Club Logo"></a>
                           <p class="lead"> For <span>Squash</span>. For <span>Fitness</span>. <span>For Life</span>. </p>
+                          
                           <ul id="mainSoc">
                               <li class="socNavContain">
-                                  <a class="socNav" href="https://www.facebook.com/groups/LondonSFC/about/"><i class="fa fa-facebook"></i></a>
-                                  <a class="socNav" href="https://www.instagram.com/londonsquash/"><i class="fa fa-instagram"></i></a>
-                                  <a class="socNav" href="https://twitter.com/londonsquash"><i class="fa fa-twitter"></i></a>
-                                  <a class="socNav" href="https://www.linkedin.com/company/london-squash-&-fitness-club/"><i class="fa fa-linkedin"></i></a>
+                                  <a class="socNav" href="https://www.facebook.com/groups/LondonSFC/about/"><i class="fab fa-facebook-f"></i></a>
+                                  <a class="socNav" href="https://www.instagram.com/londonsquash/"><i class="fab fa-instagram"></i></a>
+                                  <a class="socNav" href="https://twitter.com/londonsquash"><i class="fab fa-twitter"></i></a>
+                                  <a class="socNav" href="https://www.linkedin.com/company/london-squash-&-fitness-club/"><i class="fab fa-linkedin"></i></a>
                               </li>
                           </ul>
+                          <div id="playContainer"><i id="playBtn" class="fa fa-play-circle"></i></div>
+                          
                           <ul id="ctaFront">
                               <li class="membersOnly"><a href="home.html" title="Learn More">Learn More</a></li>
                               <li class="membersOnly"><a href="members.html" title="For Members">For Members</a></li>
                           </ul>
-                    </div>
+                        </section>
                 </div>
             </div>
           </div>
+          <section class="videoScreen">
+                <h2 class="hidden">Video Screen</h2>
+        
+                <span class="close-videoScreen">x</span>
+                <!-- add video here with sources for fallback / standards -->
+        
+                <video id="videoElement">
+                  <!-- <source> element added dinamically through JS file, based on screen-size -->
+                </video>
+          
+        
+                <div class="controls">
+                        <ul>
+                          <li class="rewindToStart">
+                                <i class="fas fa-fast-backward"></i>
+                              </li>
+                          <li class="play-pause">
+                                <i class="fas fa-pause"></i>
+                              </li>
+                          <li><input type="range" id="clipBar" value="0"></li>
+                          <li>
+                                <p id="clipTiming">0:00 / 0:00</p>
+                              </li>
+                          <li id="muteBtn"><i class="fas fa-volume-up"></i></li>
+                          <li><i class="far fa-volume-mute" style="display: none;"></i></li>
+                          <li><input type="range" id="volumeBar" value="1" min="0" max="1" step="0.1"></li>
+                        </ul>
+              
+                      </div>
+                    
+               <!-- scroll down mouse icon -->
+      <div class="scroll-downs">
+            <div class="mouse">
+              <div class="scroller"></div>
+            </div>
+          </div>
+        </section>
           <div class="footer">
               <!-- footer-->
               <div class="container">
@@ -65,7 +105,7 @@
                                   <ul class="listnone contact">
                                       <li><i class="fa fa-map-marker"></i> 76 Albert Street London, Ontario N6A 1L8 </li>
                                       <li><i class="fa fa-phone"></i> (519) 433-0691</li>
-                                      <li><a href="info@londonsquashandfitness.ca"><i class="fa fa-envelope-o"></i>Email Us</a></li>
+                                      <li><a href="info@londonsquashandfitness.ca"><i class="fas fa-envelope"></i>Email Us</a></li>
                                   </ul>
                               </div>
                           </div>
@@ -75,15 +115,15 @@
                                   <h2 class="widget-title">Social Media</h2>
                                   <ul class="listnone">
                                       <li>
-                                          <a href="https://www.facebook.com/groups/LondonSFC/about/"> <i class="fa fa-facebook"></i> Facebook </a>
+                                          <a href="https://www.facebook.com/groups/LondonSFC/about/"> <i class="fab fa-facebook-f"></i>Facebook </a>
                                       </li>
-                                      <li><a href="https://twitter.com/londonsquash"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                      <li><a href="https://twitter.com/londonsquash"><i class="fab fa-twitter"></i> Twitter</a></li>
 
                                       <li>
-                                          <a href="https://www.instagram.com/londonsquash/"> <i class="fa fa-instagram"></i>Instagram</a>
+                                          <a href="https://www.instagram.com/londonsquash/"> <i class="fab fa-instagram"></i>Instagram</a>
                                       </li>
                                       <li>
-                                          <a href="https://www.linkedin.com/company/london-squash-&-fitness-club"> <i class="fa fa-linkedin"></i>LinkedIn</a>
+                                          <a href="https://www.linkedin.com/company/london-squash-&-fitness-club"> <i class="fab fa-linkedin"></i>LinkedIn</a>
                                       </li>
                                   </ul>
                               </div>
@@ -136,11 +176,13 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/menumaker.js"></script>
-      <script src="js/full-video.js"></script>
+
   <!--*<script src="js/hide-logo.js"></script>-->
     <!-- sticky header -->
     <script src="js/jquery.sticky.js"></script>
     <script src="js/sticky-header.js"></script>
+    <script src="js/video-player.js"></script>
+    <script src="js/full-video.js"></script>
 </body>
 
 </html>

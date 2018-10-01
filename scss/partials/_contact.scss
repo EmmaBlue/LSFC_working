@@ -6,12 +6,6 @@
   background-size:100%;
 }
 
-#navRow.contactPage  {
-
-
-}
-
-
 //Background Image Queries
 
 @media screen and (min-width:321px) and (max-width:414px) {
@@ -151,42 +145,49 @@
 .widget-social {
 
   margin-bottom: 30px;
+
+  .contactSoc i  {
+
+    font-size: 1.5em;
+    padding-right: 5px;
+  }
 }
 
-.widget-social .social-circle {
+
+.widget-social  .fab.fa-twitter .fab.fa-instagram .fab.fa-facebook-f .fab.fa-instagram {
 
 a {
 
   background-color: transparent;
 }
 
-.widget-social .social-circle .fa {
+.widget-social .fab.fa-twitter .fab.fa-instagram .fab.fa-facebook-f .fab.fa-instagram {
 
-  font-size: 1.5em;
   text-align: center;
 }
 
 
-.fa {
+.fab.fa-twitter .fab.fa-instagram .fab.fa-facebook-f .fab.fa-instagram {
 
   color: $background;
   background-color: $secondary;
   padding: 10px;
+  font-size: 1.5em;
   }
 
-.fa:hover, .fa:active {
+  .fab.fa-twitter:hover .fab.fa-instagram:hover .fab.fa-facebook-f:hover, .fab.fa-twitter:active .fab.fa-instagram:active .fab.fa-facebook-f:active .fab.fa-instagram:active {
 
   opacity: $opacity;
   filter: Alpha(opacity=80);
 }
-.fa-facebook {
+.fab.fa-facebook-f {
 
     padding-left: 15px;
     padding-right: 15px;
 
   }
 
-.fa-twitter {
+  .fab.fa-twitter .fab.fa-instagram .fab.fa-facebook-f .fab.fa-instagram {
 
       padding: 10px;
       margin-left: 2.5px;
@@ -199,13 +200,13 @@ a {
 
 @media screen and (min-width: 600px) {
 
-  .widget-social .social-circle .fa {
+  .widget-social  .fab.fa-twitter {
 
-    font-size: 1.5em;
+
     text-align: center;
   }
 
-  .widget-social .social-circle .fa-twitter {
+  .widget-social .fab.fa-twitter {
 
     margin-left: 1px;
   }
