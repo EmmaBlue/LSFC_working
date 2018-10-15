@@ -15,17 +15,17 @@
   font-style: normal; }
 @font-face {
   font-family: 'open_sansbold';
-  src: url("opensans-bold-webfont.woff2") format("woff2"), url("opensans-bold-webfont.woff") format("woff");
+  src: url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'open_sanssemibold';
-  src: url("opensans-semibold-webfont.woff2") format("woff2"), url("opensans-semibold-webfont.woff") format("woff");
+  src: url("../fonts/opensans-semibold-webfont.woff2") format("woff2"), url("../fonts/opensans-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'open_sansregular';
-  src: url("opensans-regular-webfont.woff2") format("woff2"), url("opensans-regular-webfont.woff") format("woff");
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 .page-header #navRow.row {
@@ -518,7 +518,24 @@
 
 /* New shadow dom for play button */
 /* This one works! */
-*::-webkit-media-controls-start-playback-button {
+.bg-video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none; }
+
+/* This used to work for the parent element of button divs */
+/* But it does not work with newer browsers, the below doesn't hide the play button parent div */
+.bg-video::-webkit-media-controls-panel {
+  display: none !important;
+  -webkit-appearance: none; }
+
+/* Old shadow dom for play button */
+.bg-video::-webkit-media-controls-play-button {
+  display: none !important;
+  -webkit-appearance: none; }
+
+/* New shadow dom for play button */
+/* This one works! */
+.bg-video::-webkit-media-controls-start-playback-button {
   display: none !important;
   -webkit-appearance: none; }
 
@@ -527,7 +544,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   z-index: -1;
   opacity: 1;
   overflow: hidden; }

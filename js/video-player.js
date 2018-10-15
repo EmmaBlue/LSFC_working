@@ -160,9 +160,13 @@
     window.addEventListener('load', () => {
   
       // create source video element according to screen size
-      if (window.matchMedia("(max-width: 399px)").matches) {
+      if (window.matchMedia("(max-width: 399px) and (min-height: 500px)").matches) {
         videoSource(bckgrdVideo, 'video/lsfcvideo-mobilelarge-loop.mp4', 'video/mp4');
       } 
+
+      else if (window.matchMedia("(max-width: 399px) and (max-height: 499px)").matches) {
+        videoSource(bckgrdVideo, 'video/lsfcvideo-tablet-loop.mp4', 'video/mp4');
+      }
         else if (window.matchMedia("(max-width: 999px)").matches) {
         videoSource(bckgrdVideo, 'video/lsfcvideo-tablet-loop.mp4', 'video/mp4');
       } else if (window.matchMedia("(min-width: 1000px)").matches) {
