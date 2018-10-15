@@ -1,0 +1,209 @@
+.cta-section {
+
+  background: url('../images/court1.jpg') no-repeat center;
+}
+
+.cta-text {
+
+  margin-bottom: 20px;
+  font-size: 0.875em;
+  margin-top: -10px;
+}
+
+.cta-title {
+
+  padding-top: 25px;
+  letter-spacing: 0px;
+}
+
+//Image Media Queries
+
+@media screen and (min-width:321px) and (max-width:414px) {
+
+  #freeTrial.cta-section {
+
+    background: url('../images/court-iphoneplus.jpg') no-repeat top center;
+    min-height: 60%;
+    background-size: 100%;
+  }
+
+}
+
+@media screen and (min-width:415px) and (max-width:600px) {
+
+  #freeTrial.cta-section {
+
+    background: url('../images/court-smalltab.jpg') no-repeat top center;
+    min-height: 50%;
+    background-size: 100%;
+  }
+
+}
+
+
+@media screen and (min-width:601px) and (max-width:768px) {
+
+  #freeTrial.cta-section {
+
+    background: url('../images/court-tab.jpg') no-repeat top center;
+    min-height: 50%;
+    background-size: 100%;
+  }
+
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+  #freeTrial.cta-section {
+
+    background: url('../images/court-desktop.jpg') no-repeat center center;
+    min-height: 60%;
+    background-size: 100%;
+  }
+
+}
+
+@media screen and (min-width:1025px) {
+
+  #freeTrial.cta-section {
+
+    background: url('../images/court-large.jpg') no-repeat top center;
+    min-height: 70%;
+    background-size: 100%;
+  }
+
+}
+
+//Text Queries
+
+@media screen and (min-width: 1200px) {
+
+  #freeTrial {
+
+    .container {
+      margin-top: 0%;
+    }
+
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  #freeTrial {
+
+    .container {
+
+      padding-left: 40px;
+      padding-right: 600px;
+    }
+
+    .cta-section {
+
+      padding-top: 40px;
+    }
+
+  }
+
+  .cta-text {
+
+    font-size: 1em;
+    margin-top: 0.75em;
+  }
+
+  .cta-title {
+
+    font-size: 2.75em;
+    padding-top: 0px;
+  }
+
+  .btn-default {
+
+    margin-top: 0.25em;
+  }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px){
+
+  #freeTrial {
+
+    .container {
+
+      margin-top: 10%;
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+
+  #freeTrial {
+
+    .container {
+
+      padding-left: 30px;
+      padding-right: 50px;
+      margin-top: 10%;
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 600px) and (max-width:767px) {
+
+  .cta-text {
+
+    font-size: 1em;
+    margin-top: 0.5em;
+  }
+
+  .cta-title {
+
+    font-size: 2em;
+  }
+
+  #freeTrial {
+
+    .container {
+
+      margin-top: 7%;
+    }
+
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+
+  .cta-title {
+
+    font-size: 1.75em;
+  }
+
+  .cta-text {
+
+    font-size: 0.95em;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+
+  #freeTrial {
+
+    .container {
+
+      padding-left: 30px;
+      padding-right: 50px;
+    }
+
+  }
+
+}
+@media screen and (min-width: 375px) and (max-width: 500px){
+
+  .cta-title {
+
+    padding-top: 80px;
+  }
+}

@@ -1,24 +1,36 @@
 
 
-#container {
-  background: #edeae8;
-  position: relative;
+
+#overlay {
+
+  #videoPrompt {
+
+    margin-top: 1em;
+    color: $primary;
+  }
+
+  .fab {
+
+    margin-right: 5px;
+  }
+
 
 }
 
 
 #overlay {
-  position: absolute;
-  top: 0; right: 0; left: 0; bottom: 0;
 
   background: rgba(225,225,225,0.6);
+  padding-top: 1px;
+  padding-bottom: 1px;
+
 
   ul {
 
     list-style: none;
     padding-right: 3em;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 1.75em;
     text-align: center;
 
     li {
@@ -35,7 +47,7 @@
 
   p {
 
-    margin-top: 1em;
+    margin-top: 0.75em;
     margin-bottom: 0.7em;
   }
 }
@@ -62,7 +74,7 @@
 
       display: inline;
       padding: 10px;
-      margin-top: 20px;
+    
       margin-left: 10px;
 
 
@@ -111,6 +123,21 @@
 }
 
 
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+
+  #overlay {
+
+    height: 80vh;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+
+  #overlay {
+
+    height: 100%;
+  }
+}
 
 
 @media screen and (min-width: 420px) and (max-width: 639px) {
@@ -131,7 +158,7 @@
   #logoMain img {
 
     width: 40%;
-    margin-top: 10em;
+    //margin-top: 10em;
   }
 
   #overlay p {
@@ -141,6 +168,7 @@
 
 
 }
+
 
 @media screen and (min-width: 787px) and (max-width: 999px)  {
 
@@ -158,8 +186,8 @@
       list-style: none;
       padding-right: 3em;
       margin-top: 20px;
-      margin-bottom: 10px;
-      text-align: center;
+      margin-bottom: 1.75em;
+      text-align:center;
 
       li {
 
@@ -186,13 +214,13 @@
   #logoMain img {
 
     width: 30%;
-    margin-top: 10em;
+    margin-top: 6em;
   }
 
-  #container {
-    height: 800px;
+  /*#container {
+    height: 900px;
   
-  }
+  }*/
 
 
   #overlay {
@@ -202,7 +230,7 @@
       list-style: none;
       padding-right: 3em;
       margin-top: 20px;
-      margin-bottom: 10px;
+      margin-bottom: 1.75em;
       text-align: center;
 
       li {
@@ -233,13 +261,13 @@
 
 }
 
-@media screen and (min-width: 1301px) and (max-width: 1440px){
+/*@media screen and (min-width: 1301px) and (max-width: 1440px){
 
   #container {
     height: 800px;
   
   }
-}
+}*/
 
 @media screen and (min-width: 1441px){
 
@@ -272,7 +300,7 @@
       list-style: none;
       padding-right: 3em;
       margin-top: 20px;
-      margin-bottom: 10px;
+      margin-bottom: 1.75em;
       text-align: center;
 
       li {

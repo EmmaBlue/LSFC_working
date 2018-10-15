@@ -1,0 +1,294 @@
+//Mobile and TabletStyles
+
+ #navigation.small-screen {
+
+
+   ul  {
+
+     margin-left: -100%;
+     margin-top:14%;
+
+     li  {
+
+        text-align: center;
+        border-top: 0px;
+        width: 200%;
+
+
+         a {
+
+           padding: 15.3px 20px;
+           font-family: $medFont;
+           background-color: $secondary;
+           color: white;
+           //width: 200%;
+           font-size: 0.9em;
+         }
+
+         a.socNav {
+
+           padding: 10px 10px 0px;
+           display: block;
+           background-color: $secondary;
+           color: white;
+           transition: color 0.5s ease;
+         }
+
+        
+
+         a.socNav:hover {
+
+          color: $primary;
+        }
+
+
+
+     }
+
+     li.socNavContain {
+
+       width: 200%;
+       background-color: $secondary;
+       padding: 15px;
+     }
+
+
+
+   }
+
+   #mobileNavContain {
+
+    background-color: $secondary;
+    display: inline-block;
+  }
+
+   ul li a:focus, a:hover {
+
+     background-color: $primary;
+   }
+
+   #menu-button {
+
+      padding: 15px;
+      margin-top: 25px;
+   }
+
+   #menu-button:hover, #menu-button:active {
+
+     opacity: $opacity;
+     filter: Alpha(opacity=80);
+   }
+
+   #menu-button::before {
+
+      background: $primary;
+    }
+
+    #menu-button::after {
+
+      border-top: 2px solid $primary;
+      border-bottom: 2px solid $primary;
+
+    }
+
+    #menu-button.menu-opened::before {
+
+      background: $primary;
+    }
+
+    #menu-button.menu-opened::after {
+
+      background: $primary;
+    }
+
+ }
+
+
+
+
+ @media screen and (min-width: 375px) {
+
+  #navigation.small-screen {
+
+    #menu-button::before {
+
+      top: 26.5px;
+      right: 30px;
+      height: 2px;
+      width: 30px;
+    }
+
+    #menu-button::after {
+
+      top: 20px;
+      right: 30px;
+      height: 15px;
+      width: 30px;
+    }
+
+  }
+
+
+
+ }
+
+ @media screen and (min-width: 600px) {
+
+  #navigation.small-screen {
+
+    #menu-button::before {
+
+      top: 26.5px;
+      right: 35px;
+      height: 2px;
+      width: 40px;
+    }
+
+    #menu-button::after {
+
+      top: 20px;
+      right: 35px;
+      height: 15px;
+      width: 40px;
+    }
+
+  }
+
+
+
+ }
+
+ @media screen and (min-width: 768px) {
+
+  #navigation.small-screen {
+
+    #menu-button::before {
+
+      top: 38px;
+      right: 35px;
+      height: 2px;
+      width: 50px;
+    }
+
+    #menu-button::after {
+
+      top: 25px;
+      right: 35px;
+      height: 28px;
+      width: 50px;
+    }
+
+  }
+
+ }
+
+
+ @media screen and (min-width:600px) and (max-width:768px) {
+
+   #logoContain {
+
+     img {
+
+      height: 4em;
+
+    }
+
+
+   }
+
+
+ }
+
+ 
+
+
+ 
+
+@media screen and (min-width:769px) and (max-width:999px) {
+
+  #logoContain {
+
+    img {
+
+      height: 5em;
+    }
+  }
+}
+
+@media screen and (min-width:769px) {
+
+ #navigation {
+
+
+   li.socNavContain {
+
+      a.socNav {
+
+      display: inline-block;
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+
+  }
+
+ }
+
+}
+
+@media screen and (min-width:769px) and (max-width:999px) {
+
+  #logoContain {
+
+    img {
+
+      height: 5em;
+    }
+  }
+}
+
+@media screen and (min-width:769px) {
+
+ #navigation {
+
+
+   li.socNavContain {
+
+      a.socNav {
+
+      display: inline-block;
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+
+  }
+
+ }
+
+}
+
+
+@media screen and (min-width: 900px) and (max-width: 999px) {
+
+  #mainContent div:nth-child(1).col-lg-6.col-md-6.col-sm-6.col-xs-12 {
+
+    padding-left: 30px;
+  }
+
+
+}
+
+
+
+
+@media screen and (min-width: 900px) and (max-width: 999px) {
+
+  #mainContent div:nth-child(1).col-lg-6.col-md-6.col-sm-6.col-xs-12 {
+
+    padding-left: 30px;
+  }
+
+
+}
+
+
+

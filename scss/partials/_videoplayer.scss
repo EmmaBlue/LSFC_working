@@ -46,6 +46,13 @@
 
     font-size: 3em;
     color: $primary;
+    transition: color 0.5s ease-in-out;
+}
+
+#playBtn:hover {
+
+    color: $secondary;
+
 }
 
 /* Background Video */
@@ -82,6 +89,14 @@
     padding: 4rem 0;
     background-color: white;
   }
+
+  @media screen and (min-width: 1280px) {
+
+    .videoScreen {
+
+      padding-top: 10%;
+    }
+  }
   
   .close-videoScreen {
     position: absolute;
@@ -98,7 +113,7 @@
   }
   
   #videoElement {
-    width: 80%;
+    height: 50vh;
     border: thin solid #8e8e8e;
   }
   

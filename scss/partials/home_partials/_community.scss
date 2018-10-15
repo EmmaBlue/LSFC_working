@@ -1,0 +1,151 @@
+
+#communityPage.space-medium {
+
+  padding-top: 0px;
+}
+
+
+#communityPage {
+
+
+  .service-block {
+
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .mb60 {
+
+    margin-bottom: 20px;
+  }
+
+  h2 {
+
+    font-size: 1.25em;
+    font-family: $subheadingFont;
+    text-align: center;
+    margin-bottom: 20px;
+
+    a {
+
+      color: $primary;
+
+    }
+
+    a:hover, a:focus {
+
+      color: $primary;
+    }
+  }
+
+  img {
+
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    margin-bottom: -5px;
+  }
+
+
+  p {
+
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+  p:last-child {
+
+    margin-bottom: -5px;
+  }
+
+  .service-content {
+
+    h2 {
+
+      font-size: 1em;
+    }
+
+
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  #communityPage.space-medium {
+
+    padding-top: 1.5em;
+  }
+}
+
+@media screen and (min-width: 414px) {
+
+  #communityPage {
+
+    p {
+
+      font-size: 0.85em;
+    }
+
+  }
+}
+
+@media screen and (min-width: 516px) and (max-width: 767px) {
+
+  #communityPage {
+
+    img {
+
+      width: 36%;
+    }
+
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 515px) {
+
+  #communityPage {
+
+    img {
+
+      width: 50%;
+    }
+
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  #communityPage {
+
+    .btn-default {
+
+      font-size: 0.9em;
+    }
+
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  #communityPage {
+
+    .btn-default {
+
+      font-size: 0.9em;
+      margin-bottom: 20px;
+    }
+
+    p {
+
+      font-size: 0.95em;
+    }
+
+    .service-block {
+
+      margin-bottom: 40px;
+    }
+
+  }
+}

@@ -1,13 +1,13 @@
 @import 'base/_variables';
 @import 'partials/_nav';
-@import 'partials/_nav_contact';
+@import 'partials/_nav_mobile';
 @import 'partials/_home';
 @import 'partials/_videoplayer';
-@import 'partials/_community';
-@import 'partials/_freetrial';
-@import 'partials/_testimonials';
-@import 'partials/_bookcourt';
-@import 'partials/_nashcup';
+@import 'partials/home_partials/_freetrial';
+@import 'partials/home_partials/_testimonials';
+@import 'partials/home_partials/_bookcourt';
+@import 'partials/home_partials/_nashcup';
+@import 'partials/home_partials/_community';
 @import 'partials/_contact';
 @import 'partials/_about';
 @import 'partials/_footer';
@@ -15,6 +15,8 @@
 @import 'partials/_members';
 @import 'partials/_bookvisit';
 @import 'partials/_programs';
+@import 'partials/_massage';
+
 
 body, h1, h2, h3, h4, .small-title {
 
@@ -89,9 +91,15 @@ p {
   -webkit-transition: opacity 0.2s linear;
 }
 
-.btn-default:hover, .btn-default:focus {
+.btn-default:hover{
 
   opacity: $opacity;
   filter: Alpha(opacity=80);
   background-color: $secondary;
+}
+
+.btn-white:focus {
+  background-color:$primary;
+  border-color: white;
+
 }

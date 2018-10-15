@@ -67,7 +67,7 @@
 
     list-style: none;
     margin-top: 15px;
-    margin-left: -30px;
+    margin-left: -10px;
 
     li {
 
@@ -79,12 +79,17 @@
         text-align: center;
         margin-right: 7px;
       }
+
+      a:hover {
+
+        background-color: transparent;
+      }
     }
 
     .fa {
 
-      color: $background;
-      background-color: $secondary;
+      color: $secondary;
+      //background-color: $secondary;
       padding: 5px;
       }
 
@@ -92,6 +97,7 @@
 
       opacity: $opacity;
       filter: Alpha(opacity=80);
+      
     }
     .fa-facebook {
 
@@ -116,7 +122,37 @@
 
  }
 
-  @media screen and (min-width: 321px) and (max-width:375px) {
+ #arrowContain {
+
+  margin-top: 1.25em;
+
+  a {
+
+    margin-left: 70px;
+
+    .fa-angle-down {
+
+      color: $primary;
+      font-size: 2em;
+      transition: color 0.5s ease;
+     }
+  }
+
+  a:hover {
+
+    color: transparent;
+  }
+
+  .fa-angle-down:hover {
+
+    color: black;
+   }
+
+ }
+
+
+  @media screen and (min-width: 321px) and (max-width:374px)   and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait){
 
     .hero-section {
 
@@ -127,22 +163,9 @@ background-size: cover;
 
 }
 
-    @media screen and (min-width: 376px) and (max-width:413px) {
 
-      .hero-section {
-
-
-        background: url("../images/main-iphoneplus.jpg") no-repeat left center;
-        min-height: 100%;
-        background-size: cover;
-
-
-      }
-
-
-  }
-
-  @media screen and (min-width: 414px) and (max-width:474px) {
+  @media screen and (min-width: 375px) and (max-width:474px)   and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
 
     .hero-section {
 
@@ -155,7 +178,8 @@ background-size: cover;
 
 }
 
-  @media screen and (min-width: 475px) and (max-width:600px) {
+  @media screen and (min-width: 475px) and (max-width:600px)   and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait){
 
     .hero-section {
 
@@ -166,6 +190,20 @@ background-size: cover;
 
 
     }
+
+
+}
+
+@media screen and (min-width: 321px) and (max-width:600px) and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+
+  .hero-section {
+
+    background: url("../images/main-tab.jpg") no-repeat top center;
+    min-height: 100%;
+    background-size: cover;
+
+  }
 
 
 }

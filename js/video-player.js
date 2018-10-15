@@ -160,13 +160,13 @@
     window.addEventListener('load', () => {
   
       // create source video element according to screen size
-      if (window.matchMedia("(max-width: 700px)").matches) {
-        videoSource(bckgrdVideo, 'video/lsfcvideo-mobilelarge.mp4', 'video/mp4');
+      if (window.matchMedia("(max-width: 399px)").matches) {
+        videoSource(bckgrdVideo, 'video/lsfcvideo-mobilelarge-loop.mp4', 'video/mp4');
       } 
         else if (window.matchMedia("(max-width: 999px)").matches) {
-        videoSource(bckgrdVideo, 'video/lsfcvideo-tablet.mp4', 'video/mp4');
+        videoSource(bckgrdVideo, 'video/lsfcvideo-tablet-loop.mp4', 'video/mp4');
       } else if (window.matchMedia("(min-width: 1000px)").matches) {
-        videoSource(bckgrdVideo, 'video/lsfcvideo-desktop.mp4', 'video/mp4');
+        videoSource(bckgrdVideo, 'video/lsfcvideo-desktop-loop.mp4', 'video/mp4');
       }
   
     });
