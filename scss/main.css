@@ -1430,10 +1430,9 @@ div.bottom {
 .bg-primary {
   background-color: #00703c; }
 
-@media screen and (min-width: 1280px) {
-  .teeOn {
-    margin: 0 auto;
-    margin-left: 10%; } }
+.service-block:last-child {
+  margin-left: 30px; }
+
 #memberContent.content {
   padding-top: 20px; }
 

@@ -3,10 +3,24 @@
   background-color: $primary;
 }
 
+
+@media screen and (min-width: 1280px) {
+
+  .teeOn {
+
+    margin: 0 auto;
+    margin-left: 10%;
+  }
+
+}
+
+
 #memberContent.content {
 
   padding-top: 20px;
 }
+
+
 
 #squashVector {
 
