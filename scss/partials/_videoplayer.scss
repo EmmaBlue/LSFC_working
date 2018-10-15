@@ -115,6 +115,15 @@
     opacity: 1;
     overflow: hidden;
   }
+
+@media screen and (min-width: 992px ) {
+ 
+  .bg-video {
+  
+   height: 100%;
+  }
+  
+}
   
   .video-container {
     width: 100%;
