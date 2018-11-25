@@ -16,7 +16,7 @@ To locally host this website, you’ll need Git installed on your computer.
 ## Built With
 
 * [Bootstrap 3](https://getbootstrap.com/)
-* [Javascript](https://www.javascript.com/) - Used for video player 
+* [JavaScript](https://www.javascript.com/) - Used for video player 
 
 ## To-Do List
  
