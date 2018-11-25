@@ -71,13 +71,7 @@
 
 }
 
-@media screen and (min-width: 1024px) {
-
-  #communityPage.space-medium {
-
-    padding-top: 1.5em;
-  }
-}
+// Community Page Media Queries
 
 @media screen and (min-width: 414px) {
 
@@ -147,5 +141,14 @@
       margin-bottom: 40px;
     }
 
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+  #communityPage.space-medium {
+
+    padding-top: 1.5em;
   }
 }

@@ -27,7 +27,6 @@
   padding-right: 60px;
 }
 
-//Social Media Panel
 .hero-section {
 
 
@@ -37,7 +36,7 @@
   background-size: cover;
 
 
-
+//Social Media Panel
   #mainSocial {
 
     background-color: $background;
@@ -89,7 +88,6 @@
     .fa {
 
       color: $secondary;
-      //background-color: $secondary;
       padding: 5px;
       }
 
@@ -150,6 +148,9 @@
 
  }
 
+ // Home Page Queries 
+
+ // Image Queries
 
   @media screen and (min-width: 321px) and (max-width:374px)   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait){
@@ -279,10 +280,7 @@ and (orientation: landscape) {
 
 }
 
-@media screen and (min-width: 1200px) {
-
-
-}
+//Main Content Query for Mobile and Tablet
 
 @media screen and (min-width: 375px) and (max-width: 899px) {
 
@@ -296,6 +294,8 @@ and (orientation: landscape) {
 
   }
 }
+
+// Text Queries
 
 @media screen and (min-width: 375px) {
 
@@ -361,21 +361,6 @@ and (orientation: landscape) {
 
 }
 
-/*@media screen and (min-width: 768px) and (max-width: 999px){
-
-  .hero-title {
-
-    margin-top: 0.25em;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-
-  .hero-title {
-
-    margin-top: 1.25em;
-  }
-} */
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
 
@@ -394,7 +379,7 @@ and (orientation: landscape) {
   }
 }
 
-//social media
+//social media query
 
 @media screen and (min-width: 600px) {
 
