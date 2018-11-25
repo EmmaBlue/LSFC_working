@@ -13,8 +13,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7cMontserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <!-- Style -->
+    <!-- Theme Style -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- Bootstrap Style -->
     <link href="css/main.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,7 +38,6 @@
                         </div>
                         <a id="logoMain" href="home.html"><img src="images/lsfc-logo-front.svg" alt="London Squash and Fitness Club Logo"></a>
                         <p class="lead"> For <span>Squash</span>. For <span>Fitness</span>. <span>For Life</span>. </p>
-                        
                         <ul id="mainSoc">
                             <li class="socNavContain">
                                 <a class="socNav" target=”_blank” href="https://www.facebook.com/London-Squash-and-Fitness-Club-230686533664378/"><i class="fab fa-facebook-f"></i></a>
@@ -67,12 +67,10 @@
                 <h2 class="hidden">Video Screen</h2>
         
                 <span class="close-videoScreen">x</span>
-                <!-- add video here with sources for fallback / standards -->
         
                 <video id="videoElement">
-                  <!-- <source> element added dinamically through JS file, based on screen-size -->
+                  <!-- <source> element added dynamically through JS file, based on screen-size -->
                 </video>
-          
         
                 <div class="controls">
                         <ul>
@@ -92,17 +90,8 @@
                         </ul>
               
                       </div>
-                    
-               <!-- scroll down mouse icon -->
-      <div class="scroll-downs">
-            <div class="mouse">
-              <div class="scroller"></div>
-            </div>
-          </div>
-        
-    </div>
 </section>
-          <div class="footer">
+<div class="footer">
               <!-- footer-->
               <div class="container">
                   <div class="footer-block">
@@ -140,7 +129,7 @@
                           </div>
                           <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                               <div class="footer-widget widget-newsletter">
-                                  <!-- newsletter block -->
+                                  <!-- Location Info -->
                                   <h2 class="widget-title sHours">Staff Hours</h2>
                                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hours">
                                     <h4>Weekdays</h4>
@@ -153,7 +142,7 @@
                                   <p>Snacks Available</p>
                                 </div>
                               </div>
-                              <!-- newsletter block -->
+                              <!-- End Location Info -->
                           </div>
                       </div>
 
@@ -184,15 +173,12 @@
           <!-- /.footer-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-
-  <!--*<script src="js/hide-logo.js"></script>-->
-    <!-- sticky header -->
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/sticky-header.js"></script>
+    <script src="js/bootstrap/jquery.min.js"></script>
+    <!-- Bootstrap Theme Files -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/bootstrap/jquery.sticky.js"></script>
+    <script src="js/bootstrap/sticky-header.js"></script>
+    <!-- Custom Video Player -->
     <script src="js/video-player.js"></script>
 </body>
-
 </html>

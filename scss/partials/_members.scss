@@ -4,6 +4,8 @@
 }
 
 
+//Tee On Media Query for Large Screens
+
 @media screen and (min-width: 1280px) {
 
   .teeOn {
@@ -71,7 +73,6 @@
 }
 
 
-
 .content {
 
   background-color: white;
@@ -83,6 +84,8 @@ a.btn-white {
   color: white;
   font-family: $butFont;
 }
+
+// Icons and Buttons Media Query 
 
 @media screen and (min-width:414px) {
 
@@ -121,6 +124,7 @@ a.btn-white {
     }
 }
 
+//Calendar Iframe Styles
 
 .calContainer {
   position: relative;
@@ -136,6 +140,8 @@ a.btn-white {
     width: 100%;
     height: 100%;
 }
+
+// Gold Section Styles
 
 .gold {
 
@@ -194,6 +200,8 @@ a.btn-white {
   color: white;
 }
 
+//Social Media Styles
+
 .mainSoc {
 
   margin-right: 30px;
@@ -218,6 +226,8 @@ a.btn-white {
 
 
 }
+
+//Social Media Queries
 
 @media screen and(min-width:992px) {
 

@@ -1,4 +1,4 @@
-//Default Styles 
+// Nav Styles
 
 .page-header {
 
@@ -107,37 +107,7 @@
 }
 
 
-
-   /*ul li a:focus, a:hover {
-
-     background-color: $secondary;
-     opacity: $opacity;
-     filter: Alpha(opacity=80);
-   }*/
-
-  
- //End Nav Styles
-
-
-
- @media screen and (min-width:1000px) {
-
-   #logoContain {
-
-     img {
-
-      padding-left: 0%;
-
-    }
-
-
-   }
-
-
- }
-
-
- //Desktop Nav
+ //Desktop Nav Queries
 
  @media screen and (min-width: 1000px) {
 
@@ -315,7 +285,7 @@
 
  }
 
-//Longform Nav
+//Larger Desktop Nav Queries
 
 @media screen and (min-width: 1200px)  {
 
@@ -343,6 +313,22 @@
   }
 
 
+  }
+
+  @media screen and (min-width:1000px) {
+
+    #logoContain {
+ 
+      img {
+ 
+       padding-left: 0%;
+ 
+     }
+ 
+ 
+    }
+ 
+ 
   }
 
 

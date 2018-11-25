@@ -11,15 +11,11 @@
     clipTiming = document.querySelector('#clipTiming'),
     muteBtn = document.querySelector('#muteBtn'),
     volumeBar = document.querySelector('#volumeBar'),
-    playBtn = document.querySelector('#playBtn'),
-    scrollMouseIcon = document.querySelector('.scroll-downs');
-    // ORIGINS PAGE VARIABLES
-    const circle = document.querySelector('#circle5'),
-    imageBox = document.querySelector('imageScreen');
+    playBtn = document.querySelector('#playBtn');
   
     //! FUNCTIONS
   
-    // Helper Functions: create <source> video element to load dynamically different video size
+    // videoSource function creates <source> video element to dynamically different video size
     function videoSource(element, src, type) {
       var source = document.createElement('source');
   
@@ -32,9 +28,8 @@
     // LOAD VIDEO SCREEN
     function loadMovie() {
   
-      // videoScreen ON, reset clip bar and volume
+      // Turn videoScreen on, reset clip bar and volume
       videoScreen.classList.add('show-videoPlayer');
-      scrollMouseIcon.style.display = 'none';
       clipBar.value = 0;
       volumeBar.value = 0.6;
       vidPlayer.volume = 0.6;
@@ -56,9 +51,9 @@
     }
   
   
-    // SHOW CLIP CURRENT TIME, Duration in m:s, move time range bar.
+    // Show current time in m:s and move time range bar.
     function showTime() {
-      // update range time location based on time
+      // update range bar time location based on time
       var clipBarValue = vidPlayer.currentTime * (100 / vidPlayer.duration);
       clipBar.value = clipBarValue;
       // convert currentTime and Duration in min:sec
@@ -87,7 +82,6 @@
     // CLOSE VIDEO SCREEN
     function closeBox() {
       videoScreen.classList.remove('show-videoPlayer');
-      scrollMouseIcon.style.display = 'block';
       vidPlayer.pause();
       vidPlayer.currentTime = 0;
       clipBar.value = 0;
@@ -174,23 +168,8 @@
       }
   
     });
-  
-  
-  
-  
-  
-  
-  
-  //ORIGINS FUNCTIONS
-    function openImage() {
-      imageBox.classList.add('show-imageScreen');
-    }
-  
-  
-  
-  
-  
-  
+
+    // EVENT LISTENERS 
   
     playBtn.addEventListener('click', (loadMovie));
     closeLightbox.addEventListener('click', closeBox);
@@ -201,11 +180,5 @@
     vidPlayer.addEventListener('timeupdate', showTime);
     muteBtn.addEventListener('click', muteMe);
     volumeBar.addEventListener('change', changeVolume);
-  
-  
-  
-  
-  //ORIGINS EVENT LISTENERS
-    circle.addEventListener('click', openImage());
   
   })();

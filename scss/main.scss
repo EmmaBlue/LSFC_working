@@ -3,7 +3,7 @@
 @import 'partials/_nav_mobile';
 @import 'partials/_home';
 @import 'partials/_videoplayer';
-@import 'partials/home_partials/_freetrial';
+@import 'partials/home_partials/_cta_bookvisit';
 @import 'partials/home_partials/_testimonials';
 @import 'partials/home_partials/_bookcourt';
 @import 'partials/home_partials/_nashcup';
@@ -22,8 +22,6 @@ body, h1, h2, h3, h4, .small-title {
 
   font-family: $regFont;
 }
-
-
 
 
 p.intro {
@@ -71,6 +69,13 @@ p {
   font-size: 0.85em;
   font-family: $regFont;
 }
+
+.hidden {
+
+  display:none; 
+}
+
+//Button Styles
 
 .btn {
 
