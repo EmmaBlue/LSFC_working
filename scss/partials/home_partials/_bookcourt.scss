@@ -23,7 +23,7 @@
   #freeTrial.cta-section {
 
     background: url('../images/court-iphoneplus.jpg') no-repeat top center;
-    min-height: 60%;
+   // min-height: 60%;
     background-size: 100%;
   }
 
@@ -34,7 +34,7 @@
   #freeTrial.cta-section {
 
     background: url('../images/court-smalltab.jpg') no-repeat top center;
-    min-height: 50%;
+    //min-height: 50%;
     background-size: 100%;
   }
 
@@ -45,8 +45,8 @@
 
   #freeTrial.cta-section {
 
-    background: url('../images/court-tab.jpg') no-repeat top center;
-    min-height: 50%;
+    background: url('../images/fixed-court-tab.jpg') no-repeat top center;
+    //min-height: 50%;
     background-size: 100%;
   }
 
@@ -57,7 +57,7 @@
   #freeTrial.cta-section {
 
     background: url('../images/court-desktop.jpg') no-repeat center center;
-    min-height: 60%;
+    //min-height: 60%;
     background-size: 100%;
   }
 
@@ -68,7 +68,7 @@
   #freeTrial.cta-section {
 
     background: url('../images/court-large.jpg') no-repeat top center;
-    min-height: 70%;
+   // min-height: 70%;
     background-size: 100%;
   }
 
@@ -94,7 +94,6 @@
     .container {
 
       padding-left: 40px;
-      padding-right: 600px;
     }
 
     .cta-section {
@@ -129,7 +128,8 @@
 
     .container {
 
-      margin-top: 10%;
+      margin-top: 40px;
+      margin-bottom: 60px;
     }
 
   }
@@ -144,7 +144,7 @@
 
       padding-left: 30px;
       padding-right: 50px;
-      margin-top: 10%;
+      margin-top: 20px;
     }
 
   }
@@ -204,6 +204,6 @@
 
   .cta-title {
 
-    padding-top: 80px;
+    padding-top: 20px;
   }
 }

@@ -773,35 +773,29 @@ input[type=range]:focus {
 @media screen and (min-width: 321px) and (max-width: 414px) {
   #freeTrial.cta-section {
     background: url("../images/court-iphoneplus.jpg") no-repeat top center;
-    min-height: 60%;
     background-size: 100%; } }
 @media screen and (min-width: 415px) and (max-width: 600px) {
   #freeTrial.cta-section {
     background: url("../images/court-smalltab.jpg") no-repeat top center;
-    min-height: 50%;
     background-size: 100%; } }
 @media screen and (min-width: 601px) and (max-width: 768px) {
   #freeTrial.cta-section {
-    background: url("../images/court-tab.jpg") no-repeat top center;
-    min-height: 50%;
+    background: url("../images/fixed-court-tab.jpg") no-repeat top center;
     background-size: 100%; } }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   #freeTrial.cta-section {
     background: url("../images/court-desktop.jpg") no-repeat center center;
-    min-height: 60%;
     background-size: 100%; } }
 @media screen and (min-width: 1025px) {
   #freeTrial.cta-section {
     background: url("../images/court-large.jpg") no-repeat top center;
-    min-height: 70%;
     background-size: 100%; } }
 @media screen and (min-width: 1200px) {
   #freeTrial .container {
     margin-top: 0%; } }
 @media screen and (min-width: 1024px) {
   #freeTrial .container {
-    padding-left: 40px;
-    padding-right: 600px; }
+    padding-left: 40px; }
   #freeTrial .cta-section {
     padding-top: 40px; }
 
@@ -817,12 +811,13 @@ input[type=range]:focus {
     margin-top: 0.25em; } }
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
   #freeTrial .container {
-    margin-top: 10%; } }
+    margin-top: 40px;
+    margin-bottom: 60px; } }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   #freeTrial .container {
     padding-left: 30px;
     padding-right: 50px;
-    margin-top: 10%; } }
+    margin-top: 20px; } }
 @media screen and (min-width: 600px) and (max-width: 767px) {
   .cta-text {
     font-size: 1em;
@@ -845,7 +840,7 @@ input[type=range]:focus {
     padding-right: 50px; } }
 @media screen and (min-width: 375px) and (max-width: 500px) {
   .cta-title {
-    padding-top: 80px; } }
+    padding-top: 20px; } }
 #nashTitle.cta-title {
   padding-top: 15px; }
 
@@ -952,6 +947,28 @@ input[type=range]:focus {
 @media screen and (min-width: 1024px) {
   #communityPage.space-medium {
     padding-top: 1.5em; } }
+#massagePage .cta-title {
+  padding-top: 60px; }
+
+#massagePage.cta-section {
+  background: url("../images/massage-iphoneplus.jpg") no-repeat center; }
+
+@media screen and (min-width: 321px) and (max-width: 600px) {
+  #massagePage.cta-section {
+    background: url("../images/massage-iphoneplus.jpg") no-repeat top center;
+    min-height: 30%; } }
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  #massagePage.cta-section {
+    background: url("../images/massage-tab.jpg") no-repeat top center;
+    min-height: 25%; } }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #massagePage.cta-section {
+    background: url("../images/massage-desktop.jpg") no-repeat center center;
+    min-height: 30%; } }
+@media screen and (min-width: 1025px) {
+  #massagePage.cta-section {
+    background: url("../images/massage-big-home.jpg") no-repeat top center;
+    min-height: 50%; } }
 #contactPage.page-header {
   background: url("../images/contact-mobile.jpg") no-repeat;
   min-height: 50%;

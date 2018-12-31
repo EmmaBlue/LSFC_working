@@ -1,0 +1,57 @@
+//Image Media Queries
+
+#massagePage .cta-title {
+
+    padding-top: 60px;
+}
+
+#massagePage.cta-section {
+
+    background: url('../images/massage-iphoneplus.jpg') no-repeat center;
+}
+
+@media screen and (min-width:321px) and (max-width:600px) {
+
+    #massagePage.cta-section {
+  
+      background: url('../images/massage-iphoneplus.jpg') no-repeat top center;
+      min-height: 30%;
+     // background-size: 100%;
+    }
+  
+  }
+  
+  
+  @media screen and (min-width:601px) and (max-width:768px) {
+  
+    #massagePage.cta-section {
+  
+      background: url('../images/massage-tab.jpg') no-repeat top center;
+      min-height: 25%;
+      //background-size: 100%;
+    }
+  
+  }
+  
+  @media screen and (min-width:769px) and (max-width:1024px) {
+  
+    #massagePage.cta-section {
+  
+      background: url('../images/massage-desktop.jpg') no-repeat center center;
+      min-height: 30%;
+      //background-size: 100%;
+    }
+  
+  }
+  
+  @media screen and (min-width:1025px) {
+  
+    #massagePage.cta-section {
+  
+      background: url('../images/massage-big-home.jpg') no-repeat top center;
+      min-height: 50%;
+      // background-size: 100%;
+    }
+  
+  }
+  
